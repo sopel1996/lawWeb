@@ -26,7 +26,7 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 //Порядок подключения файлов со стилями
 const styleFiles = [
    './src/scss/style.scss',
-   './src/scss/media.scss'
+   './src/scss/styleMob.scss'
 ]
 //Порядок подключения js файлов
 const scriptFiles = [

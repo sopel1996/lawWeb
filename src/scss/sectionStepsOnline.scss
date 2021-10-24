@@ -23,6 +23,7 @@ Steps Online
     .subTitle{
         @include AlmoniRegular(22);
         margin-bottom: toRem(50);
+        text-align: center;
     }
     .stepsLine{
         margin-bottom: toRem(150);

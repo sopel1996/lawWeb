@@ -1,0 +1,270 @@
+/*
+----------------------------
+Footer
+-----------------------------
+*/
+footer {
+    background-color: $primaryBgColor;
+
+    .sectionInner {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+    .footerTitle {
+        @include AlmoniBold(24);
+        color        : $secondaryColor;
+        border       : none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width        : 100%;
+        height       : toRem(33);
+        margin-bottom: toRem(10);
+
+    }
+
+    ._firstLine {
+        color          : rgba(255, 255, 255, 0.6);
+        width          : 100%;
+        padding-top    : toRem(30);
+        padding-bottom : toRem(30);
+        display        : flex;
+        flex-direction : row;
+        align-items    : flex-start;
+        justify-content: space-between;
+
+        .footerList {
+            list-style: none;
+            width     : 100%;
+            height    : 100%;
+            @include AlmoniRegular(20);
+
+            li {
+                a {
+                    color          : rgb(255, 255, 255);
+                    border         : none;
+                    height         : toRem(34);
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        .title {}
+
+        &-list,
+        &-services,
+        &-contacts,
+        &-feedback{
+            height: 100%;
+            width : toRem(315);
+        }
+
+       
+
+        &-contacts {
+            
+
+            .phone{
+                
+                a{
+                    color: inherit;
+                    font-family: inherit;
+                } 
+                i{
+                    margin-left: toRem(10);
+                    font-size: 15px;
+                    color: $secondaryColor;
+                }
+            }
+            .fax{
+                
+                a{
+                    color: inherit;
+                    font-family: inherit;
+                } 
+                i{
+                    margin-left: toRem(10);
+                    font-size: toRem(15);
+                    color: $secondaryColor;
+                }
+            }
+            .email{
+                
+                a{
+                    color: inherit;
+                    font-family: inherit;
+                } 
+                i{
+                    margin-left: toRem(10);
+                    font-size: toRem(15);
+                    color: $secondaryColor;
+                }
+            }
+            .workTime{
+               
+                .textTitle{
+                    display: block;
+                    @include AlmoniBold(20);
+                }
+                a{
+                    color: inherit;
+                    font-family: inherit;
+                } 
+                i{
+                    margin-left: toRem(10);
+                    font-size: toRem(15);
+                    color: $secondaryColor;
+                }
+            }
+            .location{
+                color: #fff;
+                i{
+                    margin-left: toRem(10);
+                    font-size: toRem(15);
+                    color: $secondaryColor;
+                }
+                a{
+                    color: inherit;
+                    font-family: inherit;
+                } 
+                .textTitle{
+                    color: inherit;
+                    display: block;
+                    @include AlmoniBold(20);
+                }
+            }
+            .phone,
+            .fax,
+            .email,
+            .workTime,
+            .location,
+            .contacts {
+                color: #fff;
+                @include AlmoniRegular(20);
+                display        : flex;
+                flex-direction : row;
+                align-items    : baseline;
+                justify-content: flex-start;
+                line-height: 1.5;
+            }
+
+            
+
+        }
+
+        &-feedback {
+           
+
+            .footerForm {
+                display        : flex;
+                flex-direction : column;
+                align-items    : center;
+                justify-content: space-between;
+
+                &-input {
+                    background-color: transparent;
+                    color        : #fff;
+                    width        : 100%;
+                    height       : toRem(40);
+                    margin-bottom: toRem(15);
+                    border       : none;
+                    outline      : none;
+                    border: 1px solid rgba(215, 218, 221, 0.2);
+                    padding      : toRem(10) toRem(20);
+                    &::placeholder{
+                        color: #fff;
+                    }
+                    
+                }
+                .btn{
+                    width: 100%;
+                    height: toRem(40);
+                }
+            }
+
+        }
+    }
+
+
+
+    ._secondLine {
+        .sectionInner{
+            width          : 100%;
+            height         : toRem(100);
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+        }
+            
+        .realmediaLogo {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: center;
+
+            .logoImg {
+                width     : toRem(90);
+                height    : toRem(20);
+                background: transparent url(../img/REALMEDIAlogo.svg) 50% 50% / cover no-repeat ;
+            }
+
+            .logoText {
+                @include AlmoniLight(15);
+                color: rgba(255, 255, 255, 0.4);
+
+                &::after {
+                    content    : "";
+                    border     : none;
+                    border-left: 1px solid rgba(255, 255, 255, 0.4);
+                    margin     : 0 toRem(10);
+                }
+            }
+        }
+
+        .socialLogo {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            width          : toRem(60);
+            height         : toRem(25);
+
+            .fb {
+                display   : flex;
+                align-items: center;
+                justify-content: center;
+                width     : toRem(25);
+                height    : toRem(25);
+                border-radius: 50%;
+                background-color: #217BEE;
+                i {
+                    color: #fff;
+                    font-size: 15px
+                }
+            }
+
+            .youtube {
+                display   : flex;
+                align-items: center;
+                justify-content: center;
+                width     : toRem(25);
+                height    : toRem(25);
+                border-radius: 50%;
+                background-color: red;
+                i{
+                    color: #fff;
+                    font-size: 12px
+                }
+            }
+        }
+
+        .copyright {
+            @include AlmoniRegular(16);
+            color: #ffffff;
+        }
+    }
+}

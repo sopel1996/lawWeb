@@ -1,0 +1,116 @@
+/*
+----------------------------
+About services
+-----------------------------
+*/
+.about-services {
+    background-color: #fff;
+    padding         : toRem(50) 0 toRem(40) 0;
+    color           : $primaryColorText;
+    height          : toRem(740);
+
+    .sectionInner {
+        display       : flex;
+        flex-direction: row;
+        align-items   : center;
+        justify-self  : space-between;
+
+    }
+
+    .title {
+        @include AlmoniBold(42);
+        margin-bottom: toRem(40);
+    }
+
+    .about-services_firstCol {
+        padding-left: toRem(25);
+        height      : toRem(648);
+        width       : toRem(692);
+        border      : none;
+        border-left : 1px solid rgba(0, 0, 0, 0.2);
+
+        .text {
+            @include AlmoniRegular(24);
+
+            p {
+                margin-bottom: toRem(24);
+            }
+        }
+
+        .btn {
+            width : toRem(160);
+            height: toRem(45);
+
+            svg {
+                margin-right: toRem(20);
+            }
+        }
+    }
+
+    .about-services_secondCol {
+        width        : toRem(692);
+        height       : toRem(648);
+        padding-right: toRem(45);
+
+        .title {
+            margin-bottom: toRem(30);
+        }
+
+        .imgList {
+            display       : flex;
+            flex-direction: row;
+            width         : 100%;
+            flex-wrap     : wrap;
+
+            &-Item {
+                width          : toRem(280);
+                height         : toRem(180);
+                display        : flex;
+                align-items    : flex-end;
+                justify-content: center;
+                color: #fff;
+                padding: toRem(22) toRem(47);
+                @include AlmoniRegular(20);
+                text-align: center;
+                transition: 0.2s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/firstCard.png) 50% 50%/cover no-repeat;
+                }
+
+                &:nth-child(1) {
+                    margin-left  : toRem(22);
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/secondCard.png) 50% 50%/cover no-repeat;
+                }
+
+                &:nth-child(4) {
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/thirdCard.png) 50% 50%/cover no-repeat;
+                }
+
+                &:nth-child(3) {
+                    margin-left  : toRem(22);
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/fourthCard.png) 50% 50%/cover no-repeat;
+                }
+
+                &:nth-child(6) {
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/fifthCard.png) 50% 50%/cover no-repeat;
+                }
+
+                &:nth-child(5) {
+                    margin-left  : toRem(22);
+                    margin-bottom: toRem(22);
+                    background   : transparent url(../img/sixthCard.png) 50% 50%/cover no-repeat;
+                }
+            }
+        }
+
+    }
+}

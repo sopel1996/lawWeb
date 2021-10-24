@@ -1,0 +1,82 @@
+/*
+----------------------------
+Banner
+-----------------------------
+*/
+.banner {
+    padding-top: toRem(80);
+    background: $primaryColor url(../img/bgBanner.png) 50% 50% /cover no-repeat;
+
+    .sectionInner{
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        height         : toRem(650);
+    }
+
+    ._cupple {
+        width     : toRem(737);
+        height    : toRem(640);
+        background: transparent url(../img/cupple.png) 50% 50% /contain no-repeat;
+        align-self: flex-end;
+    }
+
+    ._text {
+        width          : toRem(587);
+        height         : toRem(370);
+        color          : #fff;
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
+        justify-content: space-between;
+
+        .title {
+            @include AlmoniBlack(72);
+        }
+
+        .subTitle {
+            @include AlmoniBold(36);
+
+        }
+
+        .statsTitle {
+            @include AlmoniRegular(28);
+            color: $secondaryColorText;
+        }
+
+        .statsList {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            width          : 100%;
+
+            &-item {
+                border       : none;
+                border-right : 1px solid rgba(255, 255, 255, .2);
+                padding-right: 20px;
+
+
+                &:first-child {
+                    padding-right: none;
+                    border       : none;
+                    .number{
+                        &::after{
+                            content: "%"
+                        }
+                    }
+                }
+
+                .number {
+                    @include AlmoniBold(42);
+                }
+
+                .text {
+                    @include AlmoniRegular(22);
+                    color: $secondaryColorText;
+                }
+            }
+        }
+    }
+}

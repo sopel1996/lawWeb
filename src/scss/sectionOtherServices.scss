@@ -1,0 +1,76 @@
+/*
+----------------------------
+Other services
+-----------------------------
+*/
+.other-services{
+    height: toRem(320);
+    background-color: $primaryBgColor;
+    padding: toRem(40) 0;
+    background-color: #E5E5E5;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_title{
+        color: $primaryColorText;
+        @include AlmoniBold(42);
+    }
+    &_list{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &Item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: #fff;
+            width: toRem(248);
+            height: toRem(182);
+            
+            .itemImg{
+                height: toRem(200);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .nameService{
+                width: 100%;
+                height: toRem(46);
+                background-color: $primaryColorText;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include AlmoniBold(25);
+            }
+            .itemTitle{
+                padding: 0 toRem(17);
+                margin-top: toRem(13);
+                @include AlmoniBold(28);
+                color: $primaryColorText;
+                
+            }
+            .itemSubtitle{
+                padding: 0 toRem(17);
+                color: $thirdColorText;
+                @include AlmoniRegular(20); 
+                flex-grow: 1;
+            }
+            .more{
+                margin-right: toRem(17);
+                margin-bottom: toRem(14);
+                cursor: pointer;
+                @include AlmoniBold(16);
+            }
+        }
+        
+    }
+}

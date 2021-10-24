@@ -1,0 +1,64 @@
+/*
+----------------------------
+Header
+-----------------------------
+*/
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    .sectionInner {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        
+            height         : toRem(80);
+        
+    }
+
+    .btn {
+        width       : toRem(126);
+        height      : toRem(46);
+        margin-right: toRem(40);
+
+    }
+
+    ._nav {
+        flex-grow      : 1;
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        justify-content: space-between;
+        border         : none;
+
+        &Item {
+            @include AlmoniRegular(20);
+            color: #fff;
+        }
+    }
+
+    ._logo {
+        height     : toRem(59);
+        width      : toRem(179);
+        background : transparent url(../img/logo.png) 50% 50%/contain no-repeat;
+        margin-left: toRem(120);
+    }
+
+}
+.shrink{
+    background-color: #fff;
+    color: darkblue;
+
+    ._nav {
+        &Item {
+        color: darkblue;
+               }
+           }
+    ._logo{
+    background-image: url(../img/logoDark.png);
+}
+}

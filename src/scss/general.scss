@@ -1,0 +1,58 @@
+@import 'color.scss';
+@import 'mixins.scss';
+/*
+----------------------------
+Global
+-----------------------------
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+a,
+a:focus,
+a:visited{
+    outline: none;
+    text-decoration: none;
+}
+
+.sectionInner{
+    max-width: toRem(1324);
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+input{   
+    background-clip: padding-box;
+}
+._borderNone{
+    border: none !important;
+}
+._opacity{
+    opacity: 1 !important;
+}
+body{
+    background-color:$primaryBgColor;
+}
+.btn{
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: $secondaryColor;
+    color: #fff;
+    @include AlmoniBold(20);
+    &:active{
+        background-color: darken($secondaryColor, 10%);
+    }
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color:rgba(255,255,255,0.2);
+}

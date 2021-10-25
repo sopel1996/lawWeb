@@ -124,11 +124,13 @@
         width: toRem(240);
     }
 
-    .articles_listItem .itemTitle {
+    .articles_listItem .itemTitle,
+    .ArticlesCatalog .grid-item .itemTitle {
         font-size: toRem(24);
     }
 
-    .articles_listItem .itemSubtitle {
+    .articles_listItem .itemSubtitle,
+    .ArticlesCatalog .grid-item .itemSubitle {
         font-size: toRem(18);
     }
     .articles_listItem .itemImg{
@@ -318,6 +320,16 @@
     .banner ._cupple{
         width: 100%;
     }
+    .sectionSmallBanner{
+        height: toRem(350);
+    }
+    .sectionSmallBanner_title{
+        font-size: toRem(58);
+    }
+    .sectionSmallBanner_breadcrumbs{
+        font-size: toRem(18);
+    }
+
     .about-services .about-services_secondCol .imgList-Item{
         width: toRem(240);
     }
@@ -459,6 +471,9 @@
     footer ._secondLine .copyright .copyrightText{
         font-size: toRem(14);
     } 
+    .ArticlesCatalog .grid-item{
+        width: toRem(250);
+    }
 }
 
 @media (max-width: 360px) {}

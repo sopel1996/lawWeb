@@ -1,0 +1,65 @@
+/*
+----------------------------
+Location
+-----------------------------
+*/
+.address{
+    background-color: #fff;
+    color: $primaryColorText;
+    padding: toRem(40) 0;
+    .sectionInner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .firstAddress,
+    .secondAddress{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 48%;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: toRem(10);
+        .title{
+            @include AlmoniBold(28);
+            margin-bottom: toRem(5)
+            
+        }
+        .subtitle{
+            @include AlmoniRegular(20);
+
+        }
+    }
+    .mapImg{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .addressImg{
+        width: toRem(300);
+        height: toRem(270);
+    }
+    iframe{
+        width: toRem(300) !important;
+        height: toRem(270) !important;
+    }
+    .firstAddress{
+        .addressImg{
+            background: transparent url(../img/firstLoc.png) 50% 50%/cover no-repeat ;
+        }
+    }
+    .secondAddress{
+        .addressImg{
+            background: transparent url(../img/secondLoc.png) 50% 50%/cover no-repeat ;
+        }
+    }
+}

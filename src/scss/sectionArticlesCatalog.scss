@@ -1,0 +1,77 @@
+/*
+----------------------------
+Articles catalog
+-----------------------------
+*/
+.ArticlesCatalog{
+    padding-top: toRem(20);
+   background-color: #fff;
+    .grid{
+        margin: 0 auto;
+    }
+        .grid-item{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: #fafafa;
+            width: toRem(316);
+            height: toRem(375);
+            margin-bottom: toRem(20);
+           
+            &:nth-child(n){
+                .itemImg{
+                background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+            }
+            }
+            &:nth-child(2n){
+                .itemImg{
+                background: transparent url(../img/footerSecondCard.png) 50% 50%/cover no-repeat;
+                }
+            }
+            &:nth-child(3n){
+                .itemImg{
+                background: transparent url(../img/footerThirdCard.png) 50% 50%/cover no-repeat;
+                }
+            }
+            &:nth-child(4n){
+                .itemImg{
+                background: transparent url(../img/footerFourthCard.png) 50% 50%/cover no-repeat;
+                }
+            }
+            .itemImg{
+                height: toRem(200);
+                width: 100%;
+                
+            }
+            .itemTitle{
+                padding: 0 toRem(17);
+                margin-top: toRem(13);
+                @include AlmoniBold(28);
+                color: $primaryColorText;
+                
+            }
+            .itemSubtitle{
+                padding: 0 toRem(17);
+                color: $thirdColorText;
+                @include AlmoniRegular(20); 
+                flex-grow: 1;
+            }
+            .more{
+                margin-right: toRem(17);
+                margin-bottom: toRem(14);
+                cursor: pointer;
+                @include AlmoniBold(16);
+                color: $secondaryColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                span{
+                    margin-left: toRem(15);
+                }
+            }
+        
+        }
+    }

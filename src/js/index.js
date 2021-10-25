@@ -1,11 +1,27 @@
 $(document).ready(function () {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    if ($('.counter').length > 0) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    }
+
+    if ($('.grid').length > 0) {
+
+        var $container = $(".grid");
+      
+        $container.masonry({
+          columnWidth: ".grid-item",
+          itemSelector: ".grid-item",
+          isFitWidth: true,
+          gutter: 20
+        });
+      
+      
+    }
 });
 
-$(window).scroll(function(){
+$(window).scroll(function () {
     $('header').toggleClass('shrink', $(this).scrollTop() > 80);
 });
 

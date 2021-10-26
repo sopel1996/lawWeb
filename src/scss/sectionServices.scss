@@ -1,0 +1,226 @@
+/*
+----------------------------
+Services
+-----------------------------
+*/
+.services{
+    background-color: #fff;
+    padding: toRem(40) 0; 
+
+    .sectionInner{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .firstCol{
+        color: $primaryColorText;
+        padding-left: toRem(40);
+
+        .steps-online{
+            // width: toRem(896);
+            margin: toRem(35) 0;
+            .title {
+                @include AlmoniBold(42);
+                margin: 0;
+                margin-bottom: toRem(15);
+            }
+            .sectionInner{
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .stepsLine{
+                width: 100%;
+            }
+        }
+
+
+        .img{
+            width: 100%;
+            height: toRem(300);
+            background: gray url(../img/serviceBig.png) 50% 50%/cover no-repeat;
+            margin-bottom: toRem(35)
+        }
+        .text{
+            @include AlmoniRegular(22);
+            p{
+                margin-bottom: toRem(20);
+            }
+            width: 90%;
+        }
+        .form{
+            background-color: $primaryBgColor;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            @include AlmoniRegular(18);
+            padding: toRem(25) toRem(17) toRem(20) toRem(17);
+            margin-top: toRem(30);
+            .title{
+                color: #fff;
+                @include AlmoniBold(32);
+                margin: 0;
+            }
+
+            .formWrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: toRem(20);
+                label{
+                }
+                input{
+                    padding: toRem(5);
+                    height: toRem(40);
+                }
+                .btn{
+                    width: toRem(200);
+                    
+                }
+            }
+        }
+
+
+        .title{
+            @include AlmoniBold(32);
+            margin: toRem(35) 0 toRem(25) 0;
+        }
+        .grid{
+            margin: 0 auto;
+            // width: 100% !important;
+        }
+            .grid-item{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                background-color: #fafafa;
+                width: toRem(200);
+                height: toRem(185);
+                margin-bottom: toRem(20);
+               
+                &:nth-child(n){
+                    .itemImg{
+                    background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+                }
+                }
+                &:nth-child(2n){
+                    .itemImg{
+                    background: transparent url(../img/footerSecondCard.png) 50% 50%/cover no-repeat;
+                    }
+                }
+                &:nth-child(3n){
+                    .itemImg{
+                    background: transparent url(../img/footerThirdCard.png) 50% 50%/cover no-repeat;
+                    }
+                }
+                &:nth-child(4n){
+                    .itemImg{
+                    background: transparent url(../img/footerFourthCard.png) 50% 50%/cover no-repeat;
+                    }
+                }
+                .itemImg{
+                    height: toRem(100);
+                    width: 100%;
+                    
+                }
+                .itemTitle{
+                    margin-top: toRem(13);
+                    @include AlmoniBold(22);
+                    color: $primaryColorText;
+                    
+                }
+                .itemSubtitle{
+                    color: $thirdColorText;
+                    @include AlmoniRegular(18); 
+                    flex-grow: 1;
+                }
+                
+            
+            }
+    }
+    .secondCol{
+        background-color: #fafafa;
+        width: toRem(412);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: toRem(40) toRem(20);
+        .card{
+            margin-bottom: toRem(30);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: toRem(333);
+            width: toRem(337);
+            text-align: center;
+            .img{
+                background: transparent url(../img/cuppleRound.png) 50% 50%/ cover no-repeat;
+                padding-top: 20px;
+                border-radius: 50%;
+                width: toRem(100);
+                height: toRem(100);
+            }
+            .title{
+                @include AlmoniBold(28);
+                color: $primaryColorText;
+            }
+            .text{
+                @include AlmoniRegular(20);
+                color: #000;
+
+            }
+        }
+        .subscribe{
+            width: toRem(337);
+            background-color: #fff;
+            margin-top: toRem(40);
+
+            .subsForm{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                color: $primaryColorText;
+                padding: 0 toRem(20);
+                .title{
+                    @include AlmoniBold(24);
+                    padding: toRem(10);
+                    border: none;
+                    border-bottom: 1px solid $secondaryColor;
+                }
+                label{
+                    @include AlmoniBold(16);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 100%;
+                    margin-top: toRem(15);
+                    
+                }
+                input{
+                    width: 100%;
+                    padding: toRem(5);
+                    border: 1px solid #e1e1e1;
+                    margin-top: toRem(5);
+                }
+                .btn{
+                    background-color: $primaryBgColor;
+                    width: 100%;
+                    height: toRem(45);
+                    margin-top: toRem(20);
+                }
+            }
+        }
+    }
+}

@@ -82,9 +82,9 @@ gulp.task('scripts', () => {
    //Шаблон для поиска файлов JS
    return gulp.src('./src/js/**.js')
       //Минификация JS
-      .pipe(uglify({
-         toplevel: true
-      }))
+      // .pipe(uglify({
+      //    toplevel: true
+      // }))
       //Выходная папка для скриптов
       .pipe(gulp.dest('./build/media/js'))
       .pipe(browserSync.stream());

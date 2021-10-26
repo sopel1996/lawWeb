@@ -1,72 +1,79 @@
 /*
 ----------------------------
-Articles
+Contact us
 -----------------------------
 */
 .contact-us {
     background-color: #fff;
-    padding: toRem(30) 0;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding         : toRem(30) 0;
+    border          : none;
+    border-bottom   : 1px solid rgba(0, 0, 0, 0.2);
+
     .sectionInner {
-        display: flex;
+        display       : flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
+        align-items: flex-start;
+         justify-content: flex-start;
     }
 
     .cuppleImg {
-        width: toRem(604);
-        height: toRem(458);
-        background: transparent url(../img/cuppleBG.png) 50% 50%/contain no-repeat;
+        width      : toRem(604);
+        height     : toRem(458);
+        background : transparent url(../img/cuppleBG.png) 50% 50%/cover no-repeat;
         margin-left: toRem(20);
     }
 
-    .contact-us_form{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .contact-us_form {
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
         justify-content: space-between;
-        height: toRem(458);
-        width: toRem(418);
-        border: none;
-        border-left: 1px solid #e1e1e1;
-        padding-left: toRem(20);
-        margin-left: toRem(30);
+        height         : toRem(458);
+        width          : toRem(418);
+        border         : none;
+        border-left    : 1px solid #e1e1e1;
+        padding-left   : toRem(20);
+        
         @include AlmoniRegular(16);
-        .title{
+
+        .title {
             @include AlmoniBold(32);
         }
-        label{
-            width: 100%;
-            display: flex;
+
+        label {
+            width         : 100%;
+            display       : flex;
             flex-direction: column;
-            align-items: flex-start;
-            input, textarea{
+            align-items   : flex-start;
+
+            input,
+            textarea {
                 box-sizing: border-box;
-                width: 100%;
+                width     : 100%;
                 @include AlmoniRegular(18);
-                padding: toRem(5);
-                border: 1px solid #e1e1e1;
-                outline: none;
+                padding      : toRem(5);
+                border       : 1px solid #e1e1e1;
+                outline      : none;
                 border-radius: 0;
-                margin-top: toRem(5);
+                margin-top   : toRem(5);
             }
-            textarea{
+
+            textarea {
                 padding-bottom: 0;
-                resize: none;
-                width: 100%;
-                height: toRem(112);
+                resize        : none;
+                width         : 100%;
+                height        : toRem(112);
             }
         }
-        .btn{
-            width: 100%;
+
+        .btn {
+            width : 100%;
             height: toRem(48);
         }
     }
 
     .contacts {
-
+        margin-right    : toRem(30);
         color: $primaryColorText;
 
         .title {

@@ -1,9 +1,13 @@
 @import 'mixins.scss';
-
+/*
+----------------------------
+Mob menu
+-----------------------------
+*/
 .mobMenu {
   @include AlmoniRegular(15);
   height         : toRem(70);
-  width: toRem(40);
+  width: toRem(126);
   // padding        : 0 toRem(40);
   z-index        : 100;
   display        : none;
@@ -30,10 +34,10 @@
     -moz-transition   : 0.4s;
     -o-transition     : 0.4s;
     transition        : 0.4s;
-    left: -20px;
+    left: 20px;
         bottom: -20px;
     &_active {
-      left: toRem(-78);
+      left: toRem(-38);
     }
   }
 

@@ -10,6 +10,12 @@ Mobile adaptive
         padding: 0 toRem(20);
         width: 100%;
     }
+    .services .firstCol{
+        padding-left: toRem(10);
+    }
+    .services .firstCol .grid{
+        width: 100%;
+    }
 
 }
 
@@ -52,6 +58,9 @@ Mobile adaptive
         height: toRem(250) !important;
     }
 
+    .services .firstCol .title{
+        text-align: center;
+    }
     footer ._firstLine-list,
     footer ._firstLine-services,
     footer ._firstLine-contacts,
@@ -192,6 +201,29 @@ Mobile adaptive
         width: toRem(200) !important;
         height: toRem(200) !important;
     }
+    .services .firstCol .steps-online .title{
+        font-size: toRem(35);
+    }
+    .services .firstCol .steps-online .firstStep{
+        right: 0;
+    }
+    .services .firstCol .steps-online .thirdStep{
+        left: 0;
+    }
+    .services .firstCol .form .formWrapper{
+        flex-direction: column;
+    }
+
+    .services .firstCol .form .formWrapper,
+    .services .firstCol .form .formWrapper label,
+    .services .firstCol .form .formWrapper input,
+    .services .firstCol .form .formWrapper .btn{
+        width: 100%;
+    }
+    .services .firstCol .form .formWrapper label{
+        margin-bottom: toRem(10);
+    }
+    
 
     footer ._firstLine .footerList li a,
     footer ._firstLine-contacts .phone,
@@ -380,6 +412,10 @@ Mobile adaptive
         height: toRem(250) !important;
     }
 
+    .services .firstCol .steps-online .title{
+        font-size: toRem(30);
+    }
+
     footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
         width: toRem(160);
     }
@@ -460,6 +496,24 @@ Mobile adaptive
             margin-bottom: 0;
         }
     }
+
+    .services .sectionInner{
+        flex-direction: column;
+    }
+    .services .firstCol{
+        padding: 0;
+    }
+    .services .secondCol{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .services .secondCol .card,
+    .services .secondCol .subscribe{
+        width: 100%;
+        max-width: none;
+    }
+
     footer ._firstLine{
         flex-direction: column;
     }
@@ -495,8 +549,12 @@ Mobile adaptive
 @media (max-width: 545px) { 
     .mobMenu .burger-menu_button{
     }
-    header .btn{
+    header .btn,
+    .mobMenu{
         width: toRem(80);
+    }
+    .mobMenu .burger-menu_button{
+        left: 0;
     }
     .banner ._text .statsList{
         width: 100%;

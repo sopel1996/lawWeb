@@ -18,6 +18,19 @@ Small banner
     }
     &_title{
         @include AlmoniBold(64);
+        position: relative;
+        margin-bottom: toRem(10);
+        &::after{
+            content: "";
+            display: block;
+            height: toRem(2);
+            width: 50px;
+            background-color: $secondaryColor;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0)
+        }
     }
     &_breadcrumbs{
         @include AlmoniRegular(20);

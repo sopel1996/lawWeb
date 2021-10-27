@@ -14,7 +14,7 @@ $(document).ready(function () {
           columnWidth: ".grid-item",
           itemSelector: ".grid-item",
           isFitWidth: true,
-          gutter: 30
+          gutter: 20
         });
       
       

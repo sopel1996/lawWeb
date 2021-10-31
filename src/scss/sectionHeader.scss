@@ -50,6 +50,7 @@ header {
 
         &>li {
             position: relative;
+            
 
             &:hover>ul.sub-menu {
                 display: block;
@@ -68,6 +69,11 @@ header {
                 &>li {
                     position: relative;
 
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    &:last-child{
+                        border: none;
+                    }
 
                     &>a {
                         padding        : 10px 20px;

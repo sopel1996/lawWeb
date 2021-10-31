@@ -61,9 +61,10 @@ About services
             flex-direction: row;
             width         : 100%;
             flex-wrap     : wrap;
+            justify-content: space-between;
 
             &-Item {
-                width          : toRem(280);
+                width          : toRem(293);
                 height         : toRem(180);
                 display        : flex;
                 align-items    : flex-end;
@@ -83,7 +84,7 @@ About services
                 }
 
                 &:nth-child(1) {
-                    margin-left  : toRem(22);
+                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
                     background   : transparent url(../img/secondCard.png) 50% 50%/cover no-repeat;
                 }
@@ -94,7 +95,7 @@ About services
                 }
 
                 &:nth-child(3) {
-                    margin-left  : toRem(22);
+                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
                     background   : transparent url(../img/fourthCard.png) 50% 50%/cover no-repeat;
                 }
@@ -105,7 +106,7 @@ About services
                 }
 
                 &:nth-child(5) {
-                    margin-left  : toRem(22);
+                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
                     background   : transparent url(../img/sixthCard.png) 50% 50%/cover no-repeat;
                 }

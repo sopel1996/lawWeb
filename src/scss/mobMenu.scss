@@ -1,4 +1,5 @@
 @import 'mixins.scss';
+
 /*
 ----------------------------
 Mob menu
@@ -6,23 +7,25 @@ Mob menu
 */
 .mobMenu {
   @include AlmoniRegular(15);
-  height         : toRem(70);
-  width: toRem(126);
+  height            : toRem(70);
+  width             : toRem(126);
   // padding        : 0 toRem(40);
-  z-index        : 100;
-  display        : none;
-  align-items    : center;
-  justify-content: center;
-  
+  z-index           : 100;
+  display           : none;
+  align-items       : center;
+  justify-content   : center;
+
   .burger {
     margin-top: toRem(20);
     width     : toRem(100);
     height    : auto;
     border    : none;
   }
-  .burger-menu{
+
+  .burger-menu {
     position: relative;
   }
+
   .burger-menu_button {
     position          : absolute;
     z-index           : 100;
@@ -34,8 +37,9 @@ Mob menu
     -moz-transition   : 0.4s;
     -o-transition     : 0.4s;
     transition        : 0.4s;
-    left: 20px;
-        bottom: -20px;
+    left              : 20px;
+    bottom            : -20px;
+
     &_active {
       left: toRem(-38);
     }
@@ -93,7 +97,9 @@ Mob menu
   }
 
   .burger-menu_nav {
-    padding-top       : toRem(180);
+    padding-top       : toRem(100);
+    padding-bottom    : toRem(40);
+    overflow          : scroll;
     position          : fixed;
     top               : 0;
     z-index           : 70;
@@ -124,10 +130,8 @@ Mob menu
     color          : #ffffff;
     border-bottom  : 1px solid #fff;
     width          : toRem(200);
-    height         : toRem(50);
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
+    height         : toRem(35);
+    line-height    : toRem(35);
   }
 
   .burger-menu_link:first-child {
@@ -160,4 +164,72 @@ Mob menu
       height: toRem(40);
     }
   }
+
+  ul.burger-menu_nav>li {
+    padding-left : 10px;
+    padding-right: 10px;
+  }
+
+  ul.burger-menu_nav>li>a {
+    display: block;
+    width  : 100%;
+  }
+
+  ul.burger-menu_nav>li.menu-item-has-children>a {
+    position: relative;
+  }
+
+  ul.burger-menu_nav>li.menu-item-has-children>a:after {
+    font-family       : "FontAwesome";
+    content           : "\f107";
+    position          : absolute;
+    left              : 0px;
+    color             : inherit;
+    font-size         : 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition   : all 0.2ms ease-in-out;
+    -o-transition     : all 0.2ms ease-in-out;
+    transition        : all 0.2s ease-in-out;
+  }
+
+  ul.burger-menu_nav>li>ul.sub-menu {
+    margin            : 0 -20px;
+    overflow          : hidden;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition   : height 0.5ms ease-in-out;
+    -o-transition     : height 0.5ms ease-in-out;
+    transition        : height 0.5s ease-in-out;
+  }
+
+  ul.burger-menu_nav>li>ul.sub-menu {
+    margin            : 0 -20px;
+    overflow          : hidden;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition   : height 0.5ms ease-in-out;
+    -o-transition     : height 0.5ms ease-in-out;
+    transition        : height 0.5s ease-in-out;
+  }
+
+  ul.burger-menu_nav>li>ul.sub-menu>li {
+    border-top: 1px rgba(35, 113, 186, .2) solid;
+    padding   : 0 20px;
+    color     : darken(#fff, 10%);
+    min-height: 35px;
+    height    : auto;
+  }
+
+  ul.burger-menu_nav>li a {
+    height: 100%;
+  }
+
+  ul.burger-menu_nav>li a.active {
+    color: #fd5c27;
+  }
+
+  ul.burger-menu_nav>li.menu-item-has-children>a.active:after {
+    color    : inherit;
+    transform: rotate(180deg);
+  }
+
+
 }

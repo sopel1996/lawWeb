@@ -71,9 +71,11 @@ Mobile adaptive
 
 @media (max-width: 1200px) {
     header ._navItem {
-        font-size: toRem(15);
+        font-size: toRem(14);
     }
-
+    header ._nav > li > ul.sub-menu{
+        top: toRem(29);
+    }
     header .btn {
         font-size: toRem(15);
         height   : toRem(36);
@@ -86,8 +88,8 @@ Mobile adaptive
     }
     .banner ._cupple{
         width: 45%;
-        height: toRem(440);
-        background-size: cover;
+        // height: toRem(440);
+        // background-size: cover;
     }
     .banner ._text{
         width: 45%;
@@ -243,6 +245,10 @@ Mobile adaptive
     .mobMenu{
         display: flex;
     }
+    header{
+        background-color: #fff;
+        position: fixed;
+    }
     header ._nav{
         display: none;
     }
@@ -250,6 +256,9 @@ Mobile adaptive
     header .btn{
         margin: 0;
         padding: 0;
+    }
+    header ._logo{
+        background-image: url(../img/logoDark.png);
     }
     .banner ._text .statsList-item .number{
         font-size: toRem(30);
@@ -362,12 +371,15 @@ Mobile adaptive
         padding: 0;
     }
     .about-services .about-services_secondCol .imgList{
-        width: 99%;
-        justify-content: space-between;
+        width: 66%;
+        justify-content: center;
+        margin: 0 auto;
     }
-    .about-services .about-services_secondCol .imgList-Item,
-    .about-services .about-services_secondCol .imgList-Item:nth-child(n){
-        margin: 0 0 toRem(20) 0;
+    .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
+        margin-right: toRem(20);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        margin-bottom: toRem(20);
     }
    
     .other-services_listItem{
@@ -446,10 +458,23 @@ Mobile adaptive
         margin-bottom: 24px;
     }
     .banner ._text .statsList{
-        width: 70%;
+        width: 100%;
+    }
+    .banner ._text .subTitle{
+        font-size: toRem(30);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(25);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(20);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(35);
     }
     .banner ._cupple{
         width: 100%;
+        background-position: 50% 50%;
     }
     .sectionSmallBanner{
         height: toRem(350);
@@ -460,7 +485,9 @@ Mobile adaptive
     .sectionSmallBanner_breadcrumbs{
         font-size: toRem(18);
     }
-
+    .about-services .about-services_secondCol .imgList{
+        width: 99%;
+    }
     .about-services .about-services_secondCol .imgList-Item{
         width: toRem(240);
     }
@@ -499,19 +526,35 @@ Mobile adaptive
 
     .services .sectionInner{
         flex-direction: column;
+        background-color: #fff;
     }
     .services .firstCol{
         padding: 0;
+        width: 100%;
+    }
+    .services .firstCol .text{
+        margin: 0;
+        // padding: 0 10px;
+        width: 100%;
     }
     .services .secondCol{
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
+        background-color: #fafafa;
     }
 
     .services .secondCol .card,
     .services .secondCol .subscribe{
         width: 100%;
         max-width: none;
+    }
+
+    .services .firstCol .steps-online .firstStep{
+        right: 5%;
+    }
+    .services .firstCol .steps-online  .thirdStep{
+        left: 5%;
     }
 
     footer ._firstLine{
@@ -565,12 +608,28 @@ Mobile adaptive
     .banner ._cupple{
         height: toRem(273);
     }
+    .banner ._text .subTitle{
+        font-size: toRem(20);
+    }
+    .banner ._text .statsTitle{
+        font-size: toRem(15);
+    }
+    .banner ._text .statsList-item .text{
+        font-size: toRem(12);
+    }
+    .banner ._text .statsList-item .number{
+        font-size: toRem(22);
+    }
     header ._logo{
         width: toRem(120);
     }
     .about-services .about-services_secondCol .imgList{
         justify-content: center;
         align-items: center;
+        width: 95%;
+    }
+    .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
+        margin-right: 0;
     }
     .testimonials_list, .articles_list{
         justify-content: center;

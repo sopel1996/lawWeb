@@ -4,7 +4,7 @@ Banner
 -----------------------------
 */
 .banner {
-    padding-top: toRem(80);
+    padding-top: toRem(130);
     background: $primaryColor url(../img/bgBanner.png) 50% 50% /cover no-repeat;
 
     .sectionInner{
@@ -18,7 +18,7 @@ Banner
     ._cupple {
         width     : toRem(737);
         height    : toRem(640);
-        background: transparent url(../img/cupple.png) 50% 50% /contain no-repeat;
+        background: transparent url(../img/cupple.png) bottom left/contain no-repeat;
         align-self: flex-end;
     }
 

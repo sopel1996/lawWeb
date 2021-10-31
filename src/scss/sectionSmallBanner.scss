@@ -19,7 +19,7 @@ Small banner
     &_title{
         @include AlmoniBold(64);
         position: relative;
-        margin-bottom: toRem(10);
+        margin-bottom: toRem(20);
         &::after{
             content: "";
             display: block;
@@ -27,7 +27,7 @@ Small banner
             width: 50px;
             background-color: $secondaryColor;
             position: absolute;
-            bottom: 0;
+            bottom: toRem(-10);
             left: 50%;
             transform: translate(-50%,0)
         }

@@ -17,6 +17,7 @@ Why us
     .title{
         @include AlmoniBold(42);
         color: $primaryColorText;
+        margin-bottom: toRem(20);
     }
     .text{
         color: $primaryColorText;

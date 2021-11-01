@@ -6,7 +6,7 @@ Testimonials
 .testimonials{
     height: toRem(477);
     background-color: $primaryBgColor;
-    padding: toRem(25) 0 toRem(40) 0;
+    padding: toRem(25) 0 0 0;
     .sectionInner{
         display: flex;
         flex-direction: column;
@@ -16,6 +16,7 @@ Testimonials
     &_title{
         color: #fff;
         @include AlmoniBold(42);
+        margin-bottom: toRem(30);
     }
     &_list{
         width: 100%;

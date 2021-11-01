@@ -108,31 +108,38 @@ Services
                 width: toRem(200);
                 height: toRem(185);
                 margin-bottom: toRem(20);
+                &:hover{
+                    .itemImg{
+                        background-size: 110% 110%;
+                    }
+                }
                
                 &:nth-child(n){
                     .itemImg{
-                    background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+                    background-image:url(../img/footerFirstCard.png);
                 }
                 }
                 &:nth-child(2n){
                     .itemImg{
-                    background: transparent url(../img/footerSecondCard.png) 50% 50%/cover no-repeat;
+                    background-image:url(../img/footerSecondCard.png);
                     }
                 }
                 &:nth-child(3n){
                     .itemImg{
-                    background: transparent url(../img/footerThirdCard.png) 50% 50%/cover no-repeat;
+                    background-image:url(../img/footerThirdCard.png);
                     }
                 }
                 &:nth-child(4n){
                     .itemImg{
-                    background: transparent url(../img/footerFourthCard.png) 50% 50%/cover no-repeat;
+                    background-image:url(../img/footerFourthCard.png);
                     }
                 }
                 .itemImg{
+                    background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+                    background-size: 100% 100%;
                     height: toRem(100);
                     width: 100%;
-                    
+                    transition: 0.2s;
                 }
                 .itemTitle{
                     margin-top: toRem(13);

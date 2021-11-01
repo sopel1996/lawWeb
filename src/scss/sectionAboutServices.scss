@@ -40,17 +40,19 @@ About services
         .btn {
             width : toRem(160);
             height: toRem(45);
-
-            svg {
-                margin-right: toRem(20);
-            }
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            // svg {
+            //     margin-right: toRem(20);
+            // }
         }
     }
 
     .about-services_secondCol {
-        width        : toRem(692);
+        width        : toRem(584);
         height       : toRem(648);
-        padding-right: toRem(45);
+        margin-right: toRem(45);
 
         .title {
             margin-bottom: toRem(30);
@@ -64,7 +66,7 @@ About services
             justify-content: space-between;
 
             &-Item {
-                width          : toRem(293);
+                width          : toRem(281);
                 height         : toRem(180);
                 display        : flex;
                 align-items    : flex-end;
@@ -74,41 +76,40 @@ About services
                 @include AlmoniRegular(20);
                 text-align: center;
                 transition: 0.2s;
+                background   : transparent url(../img/firstCard.png) 50% 50% no-repeat;
+                background-size: 100% 100%;
                 &:hover{
-                    transform: scale(1.2);
+                    background-size: 110% 110%;
                 }
 
                 &:nth-child(2) {
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/firstCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/firstCard.png);
                 }
 
                 &:nth-child(1) {
-                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/secondCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/secondCard.png);
                 }
 
                 &:nth-child(4) {
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/thirdCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/thirdCard.png);
                 }
 
                 &:nth-child(3) {
-                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/fourthCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/fourthCard.png);
                 }
 
                 &:nth-child(6) {
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/fifthCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/fifthCard.png);
                 }
 
                 &:nth-child(5) {
-                    // margin-left  : toRem(10);
                     margin-bottom: toRem(22);
-                    background   : transparent url(../img/sixthCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/sixthCard.png);
                 }
             }
         }

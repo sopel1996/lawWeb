@@ -76,8 +76,11 @@ Steps Online
         width: toRem(160);
         height: toRem(46);
         color: #fff; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         svg{
-            margin-right: toRem(20);
+            // margin-right: toRem(20);
         }
     }
 }

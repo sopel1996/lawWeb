@@ -31,31 +31,38 @@ Articles
             background-color: #fff;
             width: toRem(316);
             height: toRem(375);
-           
+            &:hover{
+                .itemImg{
+                    background-size: 110% 110%;
+                }
+            }
             &:nth-child(4){
                 .itemImg{
-                background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+                    background-image: url(../img/footerFirstCard.png);
             }
             }
             &:nth-child(3){
                 .itemImg{
-                background: transparent url(../img/footerSecondCard.png) 50% 50%/cover no-repeat;
+                background-image: url(../img/footerSecondCard.png);
                 }
             }
             &:nth-child(2){
                 .itemImg{
-                background: transparent url(../img/footerThirdCard.png) 50% 50%/cover no-repeat;
+                background-image: url(../img/footerThirdCard.png);
                 }
             }
             &:nth-child(1){
                 .itemImg{
-                background: transparent url(../img/footerFourthCard.png) 50% 50%/cover no-repeat;
+                background-image: url(../img/footerFourthCard.png);
                 }
             }
             .itemImg{
                 height: toRem(200);
                 width: 100%;
-                
+                background: transparent url(../img/footerFirstCard.png) 50% 50% no-repeat;
+                background-size: 100% 100%;
+                transition: 0.2s;
+
             }
             .itemTitle{
                 padding: 0 toRem(17);

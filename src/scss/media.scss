@@ -16,12 +16,15 @@ Mobile adaptive
     .services .firstCol .grid{
         width: 100%;
     }
+    .about-services .about-services_secondCol{
+        margin-right: toRem(10);
+    }
 
 }
 
 @media (max-width: 1300px) {
     .about-services .about-services_secondCol .imgList-Item {
-        width    : toRem(240);
+        width    : toRem(260);
         font-size: toRem(15);
     }
 
@@ -79,6 +82,9 @@ Mobile adaptive
     header .btn {
         font-size: toRem(15);
         height   : toRem(36);
+    }
+    .about-services .about-services_secondCol .imgList-Item{
+        width: toRem(250);
     }
 }
 
@@ -306,7 +312,7 @@ Mobile adaptive
     }
     .testimonials_list{
         width: 70%;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
     .testimonials_listItem{
         margin-bottom: toRem(20);
@@ -361,6 +367,7 @@ Mobile adaptive
         border: none;
         width: 100%;
         padding: 0;
+        margin-bottom: toRem(20);
     }
     .about-services .title{
         text-align: center;
@@ -631,7 +638,7 @@ Mobile adaptive
     .about-services .about-services_secondCol .imgList-Item:nth-child(2n){
         margin-right: 0;
     }
-    .testimonials_list, .articles_list{
+    .articles_list{
         justify-content: center;
     }
     .why-us .text{

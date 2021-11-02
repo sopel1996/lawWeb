@@ -39,16 +39,19 @@ input{
     opacity: 1 !important;
 }
 body{
-    background-color:$primaryBgColor;
+    transition: all 0.2s;
 }
 .btn{
-    color: #fff;
+    color: #fff !important;
     outline: none;
     border: none;
     cursor: pointer;
     background-color: $secondaryColor;
-    color: #fff;
     @include AlmoniBold(20);
+    padding: toRem(10) toRem(20);
+    svg{
+        margin: 0 20px 0 0;
+    }
     &:active{
         background-color: darken($secondaryColor, 10%);
     }

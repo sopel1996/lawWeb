@@ -107,7 +107,7 @@ Mob menu
     flex-flow         : column;
     height            : 100%;
     background-color  : #080325;
-    overflow-y        : auto;
+    overflow          : scroll;
     right             : -100%;
     -webkit-transition: 0.8s;
     -moz-transition   : 0.8s;

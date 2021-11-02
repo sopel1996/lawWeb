@@ -5,8 +5,8 @@ Steps Online
 */
 .steps-online{
     background-color: #E5E5E5;
-    height: toRem(418);
-    padding: toRem(35) 0 toRem(40) 0;
+    // height: toRem(418);
+    padding: toRem(40) 0 toRem(40) 0;
 
     .sectionInner{
         display: flex;
@@ -14,16 +14,16 @@ Steps Online
         align-items: center;
         justify-content: flex-start;
         color: $primaryColor;
-        width: toRem(755);
     }
     .title{
         @include AlmoniBold(42);
-        margin-bottom: toRem(15);
+        margin-bottom: toRem(20);
     }
     .subTitle{
         @include AlmoniRegular(22);
         margin-bottom: toRem(50);
         text-align: center;
+        width: 60%;
     }
     .stepsLine{
         margin-bottom: toRem(150);
@@ -41,7 +41,7 @@ Steps Online
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: toRem(147);
+            // height: toRem(147);
         }
         .firstStep{
             right: toRem(20);
@@ -62,23 +62,25 @@ Steps Online
             @include AlmoniBold(26);
             color: #fff;
             width: toRem(45);
-            height: toRem(45);  
+            height: toRem(45);
+            margin: 0 0 toRem(20) 0;  
         }
         .stepImg{
             width: toRem(45);
             height: toRem(45);
+            margin: 0 0 toRem(20) 0;  
         }
         .stepText{
             @include AlmoniRegular(24);
         }
     }
     .btn{
-        width: toRem(160);
+        // width: toRem(160);
         height: toRem(46);
         color: #fff; 
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-evenly;
         svg{
             // margin-right: toRem(20);
         }

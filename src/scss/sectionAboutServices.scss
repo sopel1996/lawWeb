@@ -5,44 +5,45 @@ About services
 */
 .about-services {
     background-color: #fff;
-    padding         : toRem(50) 0 toRem(40) 0;
+    padding         : toRem(40) 0 toRem(40) 0;
     color           : $primaryColorText;
-    height          : toRem(740);
+    // height          : toRem(740);
+    
 
     .sectionInner {
         display       : flex;
         flex-direction: row;
-        align-items   : center;
-        justify-self  : space-between;
+        align-items   : flex-start;
+        justify-content  : space-between;
 
     }
 
     .title {
         @include AlmoniBold(42);
-        margin-bottom: toRem(40);
+        margin-bottom: toRem(20);
     }
 
     .about-services_firstCol {
         padding-left: toRem(25);
-        height      : toRem(648);
-        width       : toRem(692);
+        // height      : toRem(648);
+        width       : 52%;
         border      : none;
-        border-left : 1px solid rgba(0, 0, 0, 0.2);
 
         .text {
             @include AlmoniRegular(24);
+            margin-bottom: toRem(30);
 
             p {
-                margin-bottom: toRem(24);
+                margin-bottom: toRem(20);
             }
         }
 
         .btn {
-            width : toRem(160);
+            // width : toRem(160);
             height: toRem(45);
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-evenly;
             // svg {
             //     margin-right: toRem(20);
             // }
@@ -50,20 +51,22 @@ About services
     }
 
     .about-services_secondCol {
-        width        : toRem(584);
-        height       : toRem(648);
-        margin-right: toRem(45);
+        width: 48%;
+        // height       : toRem(648);
+        padding-right: toRem(45);
+        border: none;
+        border-right : 1px solid rgba(0, 0, 0, 0.2);
 
         .title {
-            margin-bottom: toRem(30);
+            margin-bottom: toRem(20);
         }
 
         .imgList {
             display       : flex;
             flex-direction: row;
-            width         : 100%;
+            // width         : 100%;
             flex-wrap     : wrap;
-            justify-content: space-between;
+            justify-content: flex-end;
 
             &-Item {
                 width          : toRem(281);
@@ -78,38 +81,42 @@ About services
                 transition: 0.2s;
                 background   : transparent url(../img/firstCard.png) 50% 50% no-repeat;
                 background-size: 100% 100%;
+                margin-bottom: toRem(23);
                 &:hover{
                     background-size: 110% 110%;
                 }
 
                 &:nth-child(2) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/firstCard.png);
                 }
 
                 &:nth-child(1) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/secondCard.png);
                 }
 
                 &:nth-child(4) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/thirdCard.png);
                 }
 
                 &:nth-child(3) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/fourthCard.png);
                 }
 
                 &:nth-child(6) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/fifthCard.png);
                 }
 
                 &:nth-child(5) {
-                    margin-bottom: toRem(22);
                     background-image: url(../img/sixthCard.png);
+                }
+                &:nth-child(2n){
+                    margin: 0 toRem(27) toRem(27) 0;
+                }
+                &:nth-last-child(2){
+                    margin: 0 ;
+                }
+                &:nth-last-child(1){
+                    margin: 0 toRem(27) 0 0;
                 }
             }
         }

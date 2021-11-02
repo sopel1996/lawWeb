@@ -4,7 +4,8 @@ Banner
 -----------------------------
 */
 .banner {
-    padding-top: toRem(130);
+    // padding-top: toRem(130);
+    padding: toRem(120) 0 toRem(0) 0;
     background: $primaryColor url(../img/bgBanner.png) 50% 50% /cover no-repeat;
 
     .sectionInner{
@@ -12,36 +13,39 @@ Banner
         flex-direction : row;
         align-items    : center;
         justify-content: space-between;
-        height         : toRem(650);
+        // height         : toRem(650);
     }
 
     ._cupple {
-        width     : toRem(737);
+        width     : 100%;
         height    : toRem(640);
         background: transparent url(../img/cupple.png) bottom left/contain no-repeat;
         align-self: flex-end;
     }
 
     ._text {
-        width          : toRem(587);
-        height         : toRem(370);
+        // width          : toRem(587);
+        // height         : toRem(370);
         color          : #fff;
-        display        : flex;
-        flex-direction : column;
-        align-items    : flex-start;
-        justify-content: space-between;
+        // display        : flex;
+        // flex-direction : column;
+        // align-items    : flex-start;
+        // justify-content: space-between;
 
         .title {
             @include AlmoniBlack(72);
+            margin-bottom: toRem(20);
         }
 
         .subTitle {
             @include AlmoniBold(36);
+            margin-bottom: toRem(20);
 
         }
 
         .statsTitle {
             @include AlmoniRegular(28);
+            margin-bottom: toRem(20);
             color: $secondaryColorText;
         }
 
@@ -70,6 +74,7 @@ Banner
 
                 .number {
                     @include AlmoniBold(42);
+                    margin-bottom: toRem(5)
                 }
 
                 .text {

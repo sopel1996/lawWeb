@@ -43,6 +43,10 @@ gulp.task('copy', () => {
       .pipe(gulp.src('./src/js/**/*.js'))
       .pipe(gulp.dest('./build/media/js'))
 })
+gulp.task('copy2site', () => {
+   return gulp.src('./build/**/*.*')
+      .pipe(gulp.dest('../sopel1996.github.io/'))
+})
 
 
 gulp.task('fontsConverter', () => {
@@ -117,6 +121,7 @@ gulp.task('watch', () => {
    //При изменении HTML запустить синхронизацию
    gulp.watch("./src/*.html").on('change', browserSync.reload);
 });
+
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
 // gulp.task('default', gulp.series('del', 'html', gulp.parallel('styles', 'scripts', 'image_min', 'copy'), 'watch'));

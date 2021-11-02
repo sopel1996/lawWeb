@@ -4,9 +4,9 @@ Testimonials
 -----------------------------
 */
 .testimonials{
-    height: toRem(477);
+    // height: toRem(477);
     background-color: $primaryBgColor;
-    padding: toRem(25) 0 0 0;
+    padding: toRem(40) 0 toRem(30) 0;
     .sectionInner{
         display: flex;
         flex-direction: column;
@@ -16,7 +16,7 @@ Testimonials
     &_title{
         color: #fff;
         @include AlmoniBold(42);
-        margin-bottom: toRem(30);
+        margin-bottom: toRem(20);
     }
     &_list{
         width: 100%;
@@ -40,17 +40,14 @@ Testimonials
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                
+                margin: 0 0 toRem(20) 0;
             }
             .itemText{
-                padding: 0 toRem(17);
-                margin-top: toRem(13);
                 @include AlmoniRegular(20);
                 color: $primaryColorText;
                 
             }
             .itemAuthor{
-                padding: 0 toRem(17);
                 color: $thirdColorText;
                 @include AlmoniBold(20); 
                 flex-grow: 1;
@@ -58,5 +55,29 @@ Testimonials
             
         }
         
+    }
+}
+.swiper {
+    width    : 100%;
+    // height: auto;
+}
+
+.swiper-slide {
+    min-height: 310px;
+    max-height: 350px;
+}
+.swiper-wrapper{
+    height: auto !important;
+    margin-bottom: 50px !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 20px !important;
+}
+
+
+@media screen and (min-width: 640px) {
+
+    .swiper-slide {
+        min-height: 335px;
     }
 }

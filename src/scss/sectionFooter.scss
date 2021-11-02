@@ -163,6 +163,7 @@ footer {
                 flex-direction : column;
                 align-items    : center;
                 justify-content: space-between;
+                @include AlmoniRegular(20);
 
                 &-input {
                     background-color: transparent;

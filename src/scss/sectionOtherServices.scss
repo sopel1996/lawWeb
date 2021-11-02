@@ -4,7 +4,7 @@ Other services
 -----------------------------
 */
 .other-services{
-    height: toRem(320);
+    // height: toRem(320);
     background-color: $primaryBgColor;
     padding: toRem(40) 0;
     background-color: #E5E5E5;
@@ -17,6 +17,7 @@ Other services
     &_title{
         color: $primaryColorText;
         @include AlmoniBold(42);
+        margin: 0 0 toRem(20) 0;
     }
     &_list{
         width: 100%;
@@ -34,7 +35,7 @@ Other services
             height: toRem(182);
             
             .itemImg{
-                height: toRem(200);
+                height: toRem(138);
                 width: 100%;
                 display: flex;
                 align-items: center;

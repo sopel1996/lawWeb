@@ -6,7 +6,7 @@ Articles
 .articles{
     // height: toRem(524);
     background-color: $primaryBgColor;
-    padding: toRem(40) 0 toRem(40) 0;
+    padding: toRem(40) 0 toRem(20) 0;
     .sectionInner{
         display: flex;
         flex-direction: column;
@@ -96,4 +96,19 @@ Articles
         }
         
     }
+}
+.swiper2{
+    width    : 100%;
+    // height: auto;
+}
+.swiper-slide_2 {
+    min-height: 392px;
+    max-height: 392px;
+}
+.swiper-wrapper_2{
+    height: auto !important;
+    margin-bottom: 50px !important;
+}
+.swiper2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 20px !important;
 }

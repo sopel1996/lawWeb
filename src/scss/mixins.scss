@@ -3,6 +3,12 @@
     $remValue: $value + px; 
     @return $remValue;
 }
+
+@mixin fontSize($size_px) {
+    font-size: toRem($size_px);
+    line-height: toRem($size_px);
+}
+
 @mixin AlmoniLight($size_px) {
     font-family: "Almoni",sans-serif;
     font-weight: 300;

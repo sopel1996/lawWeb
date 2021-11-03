@@ -4,6 +4,10 @@ Header
 -----------------------------
 */
 header {
+    svg{
+        fill: $primaryColorText; 
+        display: none;
+    }
 
     position     : absolute;
     top          : 0;

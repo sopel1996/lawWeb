@@ -6,7 +6,7 @@ Testimonials
 .testimonials{
     // height: toRem(477);
     background-color: $primaryBgColor;
-    padding: toRem(40) 0 toRem(30) 0;
+    padding: toRem(40) 0 toRem(20) 0;
     .sectionInner{
         display: flex;
         flex-direction: column;
@@ -57,27 +57,27 @@ Testimonials
         
     }
 }
-.swiper {
+.swiper1{
     width    : 100%;
     // height: auto;
 }
 
-.swiper-slide {
+.swiper-slide_1 {
     min-height: 310px;
     max-height: 350px;
 }
-.swiper-wrapper{
+.swiper-wrapper_1{
     height: auto !important;
     margin-bottom: 50px !important;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+.swiper1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 20px !important;
 }
 
 
-@media screen and (min-width: 640px) {
+// @media screen and (min-width: 640px) {
 
-    .swiper-slide {
-        min-height: 335px;
-    }
-}
+//     .swiper-slide {
+//         min-height: 335px;
+//     }
+// }

@@ -61,3 +61,68 @@ body{
     height: 1px;
     background-color:rgba(255,255,255,0.2);
 }
+
+.click2action {
+    background-color: rgba(255,255,255,.95);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999;
+    -webkit-box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%);
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%);
+    @include AlmoniRegular(20);
+}
+.click2action ul {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+.click2action ul li {
+    line-height: 40px;
+    width: 100%;
+}
+.click2action ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.click2action ul li.call a {
+    color: #2371ba;
+}
+.click2action ul li.mail svg {
+    fill: #fd5c27;
+}
+.click2action ul li.mail a {
+    color: #fd5c27;
+}
+.click2action ul li.whatsapp a {
+    color: #2cb742;
+}
+.click2action ul li.sep {
+    width: 1px;
+    background: rgba(231,56,39,0);
+    background: -moz-linear-gradient(top,rgba(231,56,39,0) 0%,rgba(0,0,0,.2) 50%,rgba(248,80,50,0) 100%);
+    background: -webkit-gradient(left top,left bottom,color-stop(0%,rgba(231,56,39,0)),color-stop(50%,rgba(0,0,0,.2)),color-stop(100%,rgba(248,80,50,0)));
+    background: -webkit-linear-gradient(top,rgba(231,56,39,0) 0%,rgba(0,0,0,.2) 50%,rgba(248,80,50,0) 100%);
+    background: -o-linear-gradient(top,rgba(231,56,39,0) 0%,rgba(0,0,0,.2) 50%,rgba(248,80,50,0) 100%);
+    background: -ms-linear-gradient(top,rgba(231,56,39,0) 0%,rgba(0,0,0,.2) 50%,rgba(248,80,50,0) 100%);
+    background: linear-gradient(to bottom,rgba(231,56,39,0) 0%,rgba(0,0,0,.2) 50%,rgba(248,80,50,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e73827',endColorstr='#f85032',GradientType=0);
+    height: 100%;
+    line-height: 40px;
+}
+.click2action ul li a svg {
+    max-height: 22px;
+    width: auto;
+    margin: 0 0 5px 0;
+}
+.click2action ul li.call svg {
+    fill: #2371ba;
+}

@@ -8,6 +8,7 @@ Testimonials
     background-color: $primaryBgColor;
     padding: toRem(40) 0 toRem(20) 0;
     .sectionInner{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,11 +20,12 @@ Testimonials
         margin-bottom: toRem(20);
     }
     &_list{
-        width: 100%;
+        width: 70% !important;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        // margin: 0 toRem(50);
         &Item{
             display: flex;
             flex-direction: column;
@@ -68,12 +70,15 @@ Testimonials
 }
 .swiper-wrapper_1{
     height: auto !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 55px !important;
 }
 .swiper1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 20px !important;
 }
-
+.swiper-button-next, .swiper-button-prev{
+    top: auto !important;
+    bottom: 0;
+}
 
 // @media screen and (min-width: 640px) {
 

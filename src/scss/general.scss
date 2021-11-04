@@ -41,6 +41,9 @@ input{
 body{
     transition: all 0.2s;
 }
+address{
+    font-style: normal;
+}
 .btn{
     color: #fff !important;
     outline: none;
@@ -49,6 +52,8 @@ body{
     background-color: $secondaryColor;
     @include AlmoniBold(20);
     padding: toRem(10) toRem(20);
+    position: relative;
+    
     svg{
         margin: 0 20px 0 0;
     }
@@ -93,18 +98,13 @@ body{
     font-size: 16px;
     font-weight: 700;
 }
-.click2action ul li.call a {
-    color: #2371ba;
+.click2action ul li a {
+    color: $secondaryColor;
 }
 .click2action ul li.mail svg {
     fill: #fd5c27;
 }
-.click2action ul li.mail a {
-    color: #fd5c27;
-}
-.click2action ul li.whatsapp a {
-    color: #2cb742;
-}
+
 .click2action ul li.sep {
     width: 1px;
     background: rgba(231,56,39,0);
@@ -124,5 +124,37 @@ body{
     margin: 0 0 5px 0;
 }
 .click2action ul li.call svg {
-    fill: #2371ba;
+    fill: $primaryColor;
+}
+
+.btnPrev,
+.btnNext{
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: $primaryColorText; 
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translate(0, 20);
+    i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-12px, -15px);
+    }
+}
+.btnPrev{
+    left: auto;
+    right: -60px;
+    i{
+        transform: translate(-6px,-15px);
+    }
 }

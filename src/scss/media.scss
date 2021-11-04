@@ -16,12 +16,28 @@ Mobile adaptive
     .click2action{
         display: block;
     }
+    .btnPrev{
+        right: 20px;
+    }
+    .btnNext{
+        left: 20px;
+    }
+
+    .swiper1,
+    .swiper2{
+        width: 75%;
+    }
 
     //-----header----
     header{
+        height: toRem(60);
         background-color: #fff;
         position: fixed;
         box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
+        z-index: 999;
+    }
+    header .sectionInner{
+        height: 100%;
     }
     header ._nav{
         display: none;
@@ -29,7 +45,8 @@ Mobile adaptive
     header ._logo{
         margin: 0;
         background-image: url(../img/logoDark.png);
-        margin: 0 80px 0 0;
+        margin: 0 60px 0 0;
+        height: toRem(40);
     }
     header .btn{
         display: none;
@@ -44,6 +61,9 @@ Mobile adaptive
 
 
     //-----banner-------
+    .banner{
+        padding: toRem(100) 0 0 0;
+    }
     .banner ._cupple{
         height: toRem(440);
     }
@@ -155,14 +175,19 @@ Mobile adaptive
         @include fontSize(17);
 
     }
-
+    .steps-online .btn {
+        height: 34px;
+    }
     // -------------
 
 
+    //-----testimonials----
     .testimonials_title{
         @include fontSize(29);
         
     }
+    //------------ 
+    
     
     //-----why-us----   
     .why-us .title{
@@ -207,11 +232,14 @@ Mobile adaptive
     }
     // -------------
     
-    
+
+    //-----articles----    
     .articles_title{
         @include fontSize(29);
 
     }
+    //------------
+
 
     // ----footer---
     footer ._firstLine{
@@ -233,7 +261,7 @@ Mobile adaptive
     }
     footer ._secondLine .sectionInner{
         flex-direction: column;
-        margin: toRem(10) 0 0 0;
+        margin: toRem(10) 0 toRem(63) 0;
         padding-bottom: toRem(10);
     }
     footer ._secondLine .copyright{
@@ -248,4 +276,162 @@ Mobile adaptive
         order: 1;
     }
     // -------------
+    
+    
+    //-----small banner----
+    .sectionSmallBanner_title{
+        @include fontSize(45);
+    }
+    .sectionSmallBanner_breadcrumbs{
+        @include fontSize(14);
+    }
+    // -------------
+
+
+    //-----contact-us----
+    .contact-us .sectionInner{
+        flex-direction: column;
+    }
+    .contact-us .cuppleImg{
+        width: 100%;
+        margin: 0 0 toRem(20) 0;
+    }
+    .contact-us .contact-us_form{
+        border: none;
+        padding: 0;
+        margin: 0 0 toRem(20) 0;
+    }
+    .contact-us .contact-us_form .title{
+        @include fontSize(23);
+    }
+    .contact-us .contact-us_form label{
+        @include fontSize(16);
+    }
+    .contact-us .contact-us_form label input, .contact-us .contact-us_form label textarea{
+        @include fontSize(13);
+    }
+    .contact-us .contacts .title{
+        @include fontSize(18);
+    }
+    .contact-us .contacts .phone, .contact-us .contacts .fax, .contact-us .contacts .email, .contact-us .contacts .workTime, .contact-us .contacts .location, .contact-us .contacts .contacts{
+        @include fontSize(17);
+    }
+    .contact-us .contacts .workTime .textTitle, .contact-us .contacts .location .textTitle{
+        @include fontSize(17);
+    }
+    .address .text .title{
+        @include fontSize(20);
+    }
+    .address .text .subtitle{
+        @include fontSize(16);
+    }
+    //------------
+    
+    
+    //-----services----
+   
+    //------------
+
+
+    //-----location----
+    .address .sectionInner{
+        flex-direction: column;
+    }
+    .address .firstAddress, .address .secondAddress{
+        width: 100%;
+    }
+    .address .mapImg{
+        flex-direction: column;
+    }
+    .address .addressImg,
+    .address iframe{
+        margin: 0 0 toRem(20) 0;
+        width: 100% !important;
+    }
+    //------------
+
+
+    //-----services----
+    .services .sectionInner{
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .services .firstCol{
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol,
+    .services .secondCol{
+        width: 100%;
+        padding: 0;
+    }
+    .services .firstCol .form .formWrapper{
+        flex-direction: column;
+    }
+    .services .firstCol .form .formWrapper label{
+        width: 100%;
+        padding: 0;
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol .form .formWrapper .btn{
+        width: 100%;
+    }
+    .services .firstCol .gridWrap .title{
+        text-align: center;
+        @include fontSize(23);
+    }
+    .services .firstCol .gridWrap .grid{
+        margin: 0 auto;
+    }
+
+    .services .secondCol{
+        background-color: #fafafa;
+        padding: toRem(40) 0;
+    }
+    .services .secondCol .card{
+        padding: 0;
+        margin: 0 0 toRem(40) 0;
+    }
+    .services .firstCol .text{
+        @include fontSize(16);
+    }
+    .services .firstCol .steps-online .title{
+        @include fontSize(29);
+    }    
+    .steps-online .subTitle{
+        @include fontSize(16);
+    }
+    .services .firstCol .form .title{
+        @include fontSize(23);
+    }
+    .services .firstCol .form .formWrapper input{
+        @include fontSize(16);
+    }
+    .services .firstCol .gridWrap .grid-item .itemTitle{
+        @include fontSize(16);
+    }
+    .services .secondCol .card .title{
+        @include fontSize(20);
+    }
+    .services .secondCol .card .text{
+        @include fontSize(16);
+    }
+    .services .secondCol .subscribe .subsForm .title{
+        @include fontSize(20);
+    }
+
+    //------------
+
+
+    //------article catalog------
+    .ArticlesCatalog .grid-item .itemTitle{
+        @include fontSize(20);
+    }
+    .ArticlesCatalog .grid-item .itemSubtitle{
+        @include fontSize(14);
+    }
+    .ArticlesCatalog .grid-item .more span{
+        @include fontSize(12);
+
+    }
+    //------------
 }

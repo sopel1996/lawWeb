@@ -8,6 +8,7 @@ Articles
     background-color: $primaryBgColor;
     padding: toRem(40) 0 toRem(20) 0;
     .sectionInner{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,8 +108,12 @@ Articles
 }
 .swiper-wrapper_2{
     height: auto !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 55px !important;
 }
 .swiper2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 20px !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: auto !important;
+    bottom: 0;
 }

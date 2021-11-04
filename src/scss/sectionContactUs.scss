@@ -5,39 +5,41 @@ Contact us
 */
 .contact-us {
     background-color: #fff;
-    padding         : toRem(30) 0;
+    padding         : toRem(40) 0;
     border          : none;
     border-bottom   : 1px solid rgba(0, 0, 0, 0.2);
 
     .sectionInner {
-        display       : flex;
-        flex-direction: row;
-        align-items: flex-start;
-         justify-content: flex-start;
+        display        : flex;
+        flex-direction : row;
+        align-items    : flex-start;
+        justify-content: flex-start;
     }
 
     .cuppleImg {
         width      : toRem(604);
-        height     : toRem(458);
+        height     : toRem(476);
         background : transparent url(../img/cuppleBG.png) 50% 50%/cover no-repeat;
         margin-left: toRem(20);
     }
 
     .contact-us_form {
-        display        : flex;
-        flex-direction : column;
-        align-items    : flex-start;
-        justify-content: space-between;
-        height         : toRem(458);
-        width          : toRem(418);
-        border         : none;
-        border-left    : 1px solid #e1e1e1;
-        padding-left   : toRem(20);
-        
-        @include AlmoniRegular(16);
+        display           : flex;
+        flex-direction    : column;
+        align-items       : flex-start;
+        justify-content   : flex-start;
+        // height         : toRem(458);
+        width             : toRem(418);
+        border            : none;
+        border-left       : 1px solid #e1e1e1;
+        padding-left      : toRem(20);
+        margin            : 0 0 0 toRem(20);
+
+        @include AlmoniRegular(20);
 
         .title {
             @include AlmoniBold(32);
+            margin: 0 0 toRem(20) 0;
         }
 
         label {
@@ -45,12 +47,13 @@ Contact us
             display       : flex;
             flex-direction: column;
             align-items   : flex-start;
+            margin        : 0 0 toRem(20) 0;
 
             input,
             textarea {
                 box-sizing: border-box;
                 width     : 100%;
-                @include AlmoniRegular(18);
+                @include AlmoniRegular(16);
                 padding      : toRem(5);
                 border       : 1px solid #e1e1e1;
                 outline      : none;
@@ -69,102 +72,34 @@ Contact us
         .btn {
             width : 100%;
             height: toRem(48);
+            position: relative;
+            svg{
+                margin: 0 toRem(20) 0 0 ;
+            }
         }
     }
 
     .contacts {
-        margin-right    : toRem(30);
         color: $primaryColorText;
 
         .title {
             @include AlmoniBold(24);
-            border       : none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            width        : 100%;
-            height       : toRem(33);
-            margin-bottom: toRem(10);
+            border          : none;
+            border-bottom   : 1px solid rgba(255, 255, 255, 0.1);
+            width           : 100%;
+            // height       : toRem(33);
+            margin-bottom   : toRem(20);
 
         }
 
-        .phone {
-
-            a {
-                color      : inherit;
-                font-family: inherit;
-            }
-
-            i {
-                margin-left: toRem(10);
-                font-size  : 15px;
-                color      : $secondaryColor;
-            }
-        }
-
-        .fax {
-
-            a {
-                color      : inherit;
-                font-family: inherit;
-            }
-
-            i {
-                margin-left: toRem(10);
-                font-size  : toRem(15);
-                color      : $secondaryColor;
-            }
-        }
-
-        .email {
-
-            a {
-                color      : inherit;
-                font-family: inherit;
-            }
-
-            i {
-                margin-left: toRem(10);
-                font-size  : toRem(15);
-                color      : $secondaryColor;
-            }
-        }
-
-        .workTime {
-
-            .textTitle {
-                display: block;
-                @include AlmoniBold(20);
-            }
-
-            a {
-                color      : inherit;
-                font-family: inherit;
-            }
-
-            i {
-                margin-left: toRem(10);
-                font-size  : toRem(15);
-                color      : $secondaryColor;
-            }
-        }
-
+        .workTime,
         .location {
-            i {
-                margin-left: toRem(10);
-                font-size  : toRem(15);
-                color      : $secondaryColor;
-            }
-
-            a {
-                color      : inherit;
-                font-family: inherit;
-            }
-
             .textTitle {
-                color  : inherit;
                 display: block;
                 @include AlmoniBold(20);
             }
         }
+
 
         .phone,
         .fax,
@@ -172,15 +107,24 @@ Contact us
         .workTime,
         .location,
         .contacts {
+            margin: 0 0 toRem(10) 0;
             @include AlmoniRegular(20);
             display        : flex;
             flex-direction : row;
             align-items    : baseline;
             justify-content: flex-start;
-            line-height    : 1.5;
+            i {
+                text-align : center;
+                width      : toRem(15);
+                height     : toRem(15);
+                margin-left: toRem(10);
+                font-size  : toRem(15);
+                color      : $secondaryColor;
+            }
+            a {
+                color      : inherit;
+                font-family: inherit;
+            }
         }
-
-
-
     }
 }

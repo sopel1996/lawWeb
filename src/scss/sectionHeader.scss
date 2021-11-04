@@ -4,21 +4,21 @@ Header
 -----------------------------
 */
 header {
-    svg{
-        fill: $primaryColorText; 
+    svg {
+        fill   : $primaryColorText;
         display: none;
     }
 
-    position     : absolute;
-    top          : 0;
-    left         : 0;
-    width        : 100%;
-    z-index      : 10;
-    border       : none;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    z-index         : 10;
+    border          : none;
     // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.2);
-    transition: height 0.2s;
-    
+    box-shadow      : 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+    transition      : height 0.2s;
+
 
     .sectionInner {
         display        : flex;
@@ -36,9 +36,9 @@ header {
 
     .btn {
         // width       : toRem(126);
-        padding: toRem(10) toRem(20);
+        padding        : toRem(10) toRem(20);
         // height      : toRem(46);
-        margin: 0 toRem(40) 0 0;
+        margin         : 0 toRem(40) 0 0;
 
 
     }
@@ -53,47 +53,52 @@ header {
 
         &Item {
             // display: block;
-            height : toRem(80);
+            height: toRem(80);
             @include AlmoniRegular(20);
-            color      : #fff;
+            color: #fff;
 
-            line-height: 80px;
+            line-height   : 80px;
             // margin-left: 17px;
             // font-size: 20px;
-            position: relative;
+            position      : relative;
+
             // padding: 0 0 15px 0;
-            a{
+            a {
                 position: relative;
             }
-            a::before{
-                content: " ";
-                position: absolute;
-                bottom: -10px;
-                left: 50%;
-                width: 0;
-                height: 2px;
+
+            a::before {
+                content   : " ";
+                position  : absolute;
+                bottom    : -10px;
+                left      : 50%;
+                width     : 0;
+                height    : 2px;
                 background: #ffffff;
                 transition: width 0.2s;
             }
-            a::after{
-                content: " ";
-                position: absolute;
-                bottom: -10px;
-                right: 50%;
-                width: 0;
-                height: 2px;
+
+            a::after {
+                content   : " ";
+                position  : absolute;
+                bottom    : -10px;
+                right     : 50%;
+                width     : 0;
+                height    : 2px;
                 background: #ffffff;
                 transition: width 0.2s;
             }
-            &:hover{
+
+            &:hover {
                 &>a::before {
                     width: 50%;
                 }
+
                 &>a::after {
                     width: 50%;
                 }
             }
-            
+
         }
 
         &>li {
@@ -105,7 +110,7 @@ header {
             }
 
             &>ul.sub-menu {
-                background : rgba(8, 3, 37,0.9);
+                background : rgba(8, 3, 37, 0.9);
                 display    : none;
                 line-height: 25px;
                 position   : absolute;
@@ -147,13 +152,13 @@ header {
             }
 
             &:after {
-                content    : "\f107";
-                font-family: 'FontAwesome';
-                position   : absolute;
-                left       : 0;
-                font-size  : 13px;
-                color      : inherit;
-                top        : 0;
+                content       : "\f107";
+                font-family   : 'FontAwesome';
+                position      : absolute;
+                left          : 0;
+                font-size     : 13px;
+                color         : inherit;
+                top           : 0;
                 // transform  : translate(0, -17px);
             }
         }
@@ -164,30 +169,36 @@ header {
     ._logo {
         height     : toRem(59);
         width      : toRem(179);
-        transition: 0.2s;
+        transition : 0.2s;
         background : transparent url(../img/logo.png) 50% 50%/contain no-repeat;
         margin-left: toRem(120);
     }
 
 }
 
-.shrink header {
-    position        : fixed;
-    background-color: #fff;
-    color           : $primaryColorText;
-    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 40%);
-    height: toRem(75);
+.shrink {
+    header {
+        position        : fixed;
+        background-color: #fff;
+        color           : $primaryColorText;
+        box-shadow      : 0 2px 3px 0 rgb(0 0 0 / 40%);
+        height          : toRem(75);
 
-    ._nav {
-        &Item {
-            color: $primaryColorText;
+        ._nav {
+            &Item {
+                color: $primaryColorText;
+                height: toRem(75);
+            }
+            & > li > ul.sub-menu{
+                top: toRem(72);
+            }
         }
-    }
 
-    ._logo {
-        height     : toRem(55);
-        width      : toRem(167);
-        background-image: url(../img/logoDark.png);
+        ._logo {
+            height          : toRem(55);
+            width           : toRem(167);
+            background-image: url(../img/logoDark.png);
+        }
+
     }
 }
-

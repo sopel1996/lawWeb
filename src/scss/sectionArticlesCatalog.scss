@@ -4,7 +4,7 @@ Articles catalog
 -----------------------------
 */
 .ArticlesCatalog{
-    padding-top: toRem(20);
+    padding: toRem(40) 0;
    background-color: #fff;
     .grid{
         margin: 0 auto;
@@ -17,8 +17,8 @@ Articles catalog
             justify-content: flex-start;
             background-color: #fafafa;
             width: toRem(316);
-            height: toRem(375);
-            margin-bottom: toRem(20);
+            padding: toRem(20);
+            margin: 0 0 toRem(20) 0;
             &:hover{
                 .itemImg{
                     background-size: 110% 110%;
@@ -46,29 +46,28 @@ Articles catalog
                 }
             }
             .itemImg{
-                background: transparent url(../img/footerFirstCard.png) 50% 50%/cover no-repeat;
+                min-height: toRem(200);
+                width: calc(100% + 40px);
+                background: transparent url(../img/footerFirstCard.png) 50% 50% no-repeat;
                 background-size: 100% 100%;
                 transition: 0.2s;
-                height: toRem(200);
-                width: 100%;
+                margin: toRem(-20) toRem(-20) toRem(20) 0;
                 
             }
             .itemTitle{
-                padding: 0 toRem(17);
-                margin-top: toRem(13);
                 @include AlmoniBold(28);
                 color: $primaryColorText;
+                margin: 0 0 toRem(20) 0;
+                flex-grow: 1;
                 
             }
             .itemSubtitle{
-                padding: 0 toRem(17);
                 color: $thirdColorText;
                 @include AlmoniRegular(20); 
+                margin: 0 0 toRem(20) 0;
                 flex-grow: 1;
             }
             .more{
-                margin-right: toRem(17);
-                margin-bottom: toRem(14);
                 cursor: pointer;
                 @include AlmoniBold(16);
                 color: $secondaryColor;

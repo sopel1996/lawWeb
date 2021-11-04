@@ -6,7 +6,8 @@ Small banner
 .sectionSmallBanner{
     z-index: 5;
     width: 100%;
-    height: toRem(420);
+    padding: toRem(100) 0 toRem(40) 0;
+    // height: toRem(420);
     background-color: #FAEDF2;
     background: transparent url(../img/bgBanner.png) 50% 50%/cover no-repeat;
     .sectionInner{

@@ -7,6 +7,8 @@ Articles
     // height: toRem(524);
     background-color: $primaryBgColor;
     padding: toRem(40) 0 toRem(20) 0;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
     .sectionInner{
         position: relative;
         display: flex;
@@ -14,7 +16,7 @@ Articles
         align-items: center;
         justify-content: space-between;
     }
-    &_title{
+    h2{
         color: #fff;
         @include AlmoniBold(42);
         margin: 0 0 toRem(20) 0;
@@ -69,16 +71,16 @@ Articles
 
 
             }
-            .itemTitle{
+            h3{
                 @include AlmoniBold(28);
                 color: $primaryColorText;
                 margin: 0 0 toRem(20) 0;
                 flex-grow: 1;
                 
             }
-            .itemSubtitle{
+            h4{
                 color: $thirdColorText;
-                @include AlmoniRegular(20); 
+                @include AlmoniNormal(18); 
                 margin: 0 0 toRem(20) 0;
                 flex-grow: 1;
             }
@@ -91,7 +93,7 @@ Articles
                 justify-content: center;
                 
                 span{
-                    margin-left: toRem(15);
+                    margin: 0 0 0 toRem(15);
                 }
             }
         }
@@ -108,7 +110,7 @@ Articles
 }
 .swiper-wrapper_2{
     height: auto !important;
-    margin-bottom: 55px !important;
+    margin: 0 0 toRem(55) 0 !important;
 }
 .swiper2 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 20px !important;

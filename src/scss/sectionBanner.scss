@@ -4,7 +4,6 @@ Banner
 -----------------------------
 */
 .banner {
-    // padding-top: toRem(130);
     padding: toRem(120) 0 toRem(0) 0;
     background: $primaryColor url(../img/bgBanner.png) 50% 50% /cover no-repeat;
 
@@ -24,28 +23,24 @@ Banner
     }
 
     ._text {
-        // width          : toRem(587);
-        // height         : toRem(370);
         color          : #fff;
-        // display        : flex;
-        // flex-direction : column;
-        // align-items    : flex-start;
-        // justify-content: space-between;
 
-        .title {
+        h2 {
             @include AlmoniBlack(72);
-            margin-bottom: toRem(20);
+            margin: 0 0 toRem(20) 0;
+            line-height: toRem(62);
         }
 
-        .subTitle {
+        h3 {
             @include AlmoniBold(36);
-            margin-bottom: toRem(20);
+            margin: 0 0 toRem(20) 0;
+            line-height: toRem(36);
 
         }
 
-        .statsTitle {
-            @include AlmoniRegular(28);
-            margin-bottom: toRem(20);
+        h4 {
+            @include AlmoniNormal(28);
+            margin: 0 0 toRem(20) 0;
             color: $secondaryColorText;
         }
 
@@ -59,11 +54,11 @@ Banner
             &-item {
                 border       : none;
                 border-right : 1px solid rgba(255, 255, 255, .2);
-                padding-right: 20px;
+                padding: 0 20px 0 0;
 
 
                 &:first-child {
-                    padding-right: 0;
+                    padding: 0;
                     border       : none;
                     .number{
                         &::after{
@@ -73,12 +68,13 @@ Banner
                 }
 
                 .number {
-                    @include AlmoniBold(42);
-                    margin-bottom: toRem(5)
+                    @include AlmoniBold(44);
+                    line-height: toRem(38);
+                    margin:0 0 toRem(5) 0;
                 }
 
                 .text {
-                    @include AlmoniRegular(22);
+                    @include AlmoniNormal(22);
                     color: $secondaryColorText;
                 }
             }

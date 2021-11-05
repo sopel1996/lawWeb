@@ -17,10 +17,10 @@ Small banner
         justify-content: center;
         color: #fff
     }
-    &_title{
+    h2{
         @include AlmoniBold(64);
         position: relative;
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
         &::after{
             content: "";
             display: block;
@@ -33,7 +33,7 @@ Small banner
             transform: translate(-50%,0)
         }
     }
-    &_breadcrumbs{
-        @include AlmoniRegular(20);
+    h3{
+        @include AlmoniNormal(20);
     }
 }

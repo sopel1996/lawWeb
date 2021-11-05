@@ -30,15 +30,15 @@ Location
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin-bottom: toRem(10);
-        .title{
+        margin: 0 0 toRem(10) 0;
+        h2{
             @include AlmoniBold(28);
-            margin-bottom: toRem(10)
+            margin: 0 0 toRem(10) 0;
             
         }
-        .subtitle{
-            @include AlmoniRegular(20);
-            margin-bottom: toRem(20)
+        h3{
+            @include AlmoniNormal(20);
+            margin: 0 0 toRem(20) 0;
 
         }
     }

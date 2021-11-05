@@ -63,7 +63,7 @@ Articles catalog
             }
             .itemSubtitle{
                 color: $thirdColorText;
-                @include AlmoniRegular(20); 
+                @include AlmoniNormal(18); 
                 margin: 0 0 toRem(20) 0;
                 flex-grow: 1;
             }
@@ -76,7 +76,7 @@ Articles catalog
                 justify-content: center;
                 
                 span{
-                    margin-left: toRem(15);
+                    margin: 0 0 0 toRem(15);
                 }
             }
         

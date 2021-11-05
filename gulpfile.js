@@ -64,18 +64,18 @@ gulp.task('fontsConverter', () => {
 gulp.task('styles', () => {
    //Шаблон для поиска файлов CSS
    return gulp.src(styleFiles)
-      .pipe(sourcemaps.init())
+      // .pipe(sourcemaps.init())
       //Указать stylus() , sass() или less()
       .pipe(sass())
       //Добавить префиксы
-      .pipe(autoprefixer({
-         cascade: false
-      }))
+      // .pipe(autoprefixer({
+      //    cascade: false
+      // }))
       //Минификация CSS
       .pipe(cleanCSS({
          level: 0
       }))
-      .pipe(sourcemaps.write('./'))
+      // .pipe(sourcemaps.write('./'))
       //Выходная папка для стилей
       .pipe(gulp.dest('./build/media/css'))
       .pipe(browserSync.stream());

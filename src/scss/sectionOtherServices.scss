@@ -14,7 +14,7 @@ Other services
         align-items: center;
         justify-content: space-between;
     }
-    &_title{
+    h2{
         color: $primaryColorText;
         @include AlmoniBold(42);
         margin: 0 0 toRem(20) 0;
@@ -42,7 +42,7 @@ Other services
                 justify-content: center;
                 
             }
-            .nameService{
+            h3{
                 width: 100%;
                 height: toRem(46);
                 background-color: $primaryColorText;
@@ -51,25 +51,6 @@ Other services
                 justify-content: center;
                 align-items: center;
                 @include AlmoniBold(25);
-            }
-            .itemTitle{
-                padding: 0 toRem(17);
-                margin-top: toRem(13);
-                @include AlmoniBold(28);
-                color: $primaryColorText;
-                
-            }
-            .itemSubtitle{
-                padding: 0 toRem(17);
-                color: $thirdColorText;
-                @include AlmoniRegular(20); 
-                flex-grow: 1;
-            }
-            .more{
-                margin-right: toRem(17);
-                margin-bottom: toRem(14);
-                cursor: pointer;
-                @include AlmoniBold(16);
             }
         }
         

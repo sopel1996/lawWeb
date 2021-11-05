@@ -18,7 +18,7 @@ Services
     .firstCol{
         color: $primaryColorText;
         background-color: #fff;
-        padding-left: toRem(40);
+        padding: 0 0 0 toRem(40);
         width: 70%;
        
 
@@ -27,14 +27,14 @@ Services
             width: 100%;
             height: toRem(300);
             background: gray url(../img/serviceBig.png) 50% 50%/cover no-repeat;
-            margin-bottom: toRem(20)
+            margin: 0 0 toRem(20) 0;
         }
         .text{
-            @include AlmoniRegular(22);
-            // margin-bottom: toRem(20);
+            @include AlmoniNormal(22);
+            // margin: 0 0 toRem(20) 0;
             padding: toRem(40) 0;
             p{
-                margin-bottom: toRem(20);
+                margin: 0 0 toRem(20) 0;
             }
             width: 90%;
         }
@@ -42,10 +42,10 @@ Services
 
         .steps-online{
             // width: toRem(896);
-            .title {
+            h2 {
                 @include AlmoniBold(42);
                 margin: 0;
-                margin-bottom: toRem(20);
+                margin: 0 0 toRem(20) 0;
             }
             .sectionInner{
                 flex-direction: column;
@@ -65,13 +65,12 @@ Services
             align-items: flex-start;
             justify-content: flex-start;
             width: 100%;
-            @include AlmoniRegular(18);
+            @include AlmoniNormal(18);
             padding: toRem(40) toRem(17);
-            margin: 0 0 toRem(20) 0;
-            .title{
+            h2{
                 color: #fff;
                 @include AlmoniBold(32);
-                margin: 0;
+                margin: 0 0 toRem(10) 0;
             }
 
             .formWrapper{
@@ -80,18 +79,19 @@ Services
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                margin-top: toRem(20);
+                margin: 0 0 toRem(20) 0;
                 label{
                     width: 25%;
                     padding: 0 0 0 toRem(20)
                 }
                 input{
-                    @include AlmoniRegular(18);
+                    @include AlmoniNormal(18);
                     padding: toRem(5);
                     height: toRem(40);
                     width: 100%;
                 }
                 .btn{
+                    @include fontSize(18);
                     width: 25%;
                     svg{
                         margin: 0 toRem(20) 0 0;
@@ -103,7 +103,7 @@ Services
         .gridWrap{
             padding: toRem(40) 0;
             
-            .title{
+            h2{
             @include AlmoniBold(32);
             margin: 0 0 toRem(20) 0;
         }
@@ -120,7 +120,7 @@ Services
                 background-color: #fafafa;
                 width: toRem(200);
                 // height: toRem(185);
-                // margin-bottom: toRem(20);
+                // margin: 0 0 toRem(20) 0;
                 &:hover{
                     .itemImg{
                         background-size: 110% 110%;
@@ -155,15 +155,15 @@ Services
                     transition: 0.2s;
                     margin: 0 0 toRem(20) 0;
                 }
-                .itemTitle{
+                h3{
                     @include AlmoniBold(22);
                     color: $primaryColorText;
                     margin: 0 0 toRem(20) 0;
                     
                 }
-                .itemSubtitle{
+                h4{
                     color: $thirdColorText;
-                    @include AlmoniRegular(18); 
+                    @include AlmoniNormal(18); 
                     flex-grow: 1;
                     margin: 0 0 toRem(20) 0;
                 }
@@ -191,19 +191,19 @@ Services
             text-align: center;
             .img{
                 background: transparent url(../img/cuppleRound.png) 50% 50%/ cover no-repeat;
-                padding-top: 20px;
+                padding: toRem(20) 0 0 0;
                 border-radius: 50%;
                 width: toRem(100);
                 height: toRem(100);
                 margin: 0 0 toRem(20) 0;
             }
-            .title{
+            h3{
                 @include AlmoniBold(28);
                 color: $primaryColorText;
                 margin: 0 0 toRem(20) 0;
             }
-            .text{
-                @include AlmoniRegular(20);
+            p{
+                @include AlmoniNormal(20);
                 color: #000;
 
             }
@@ -226,7 +226,7 @@ Services
                 width: 100%;
                 color: $primaryColorText;
                 padding: 0 toRem(20);
-                .title{
+                h3{
                     @include AlmoniBold(24);
                     padding: toRem(10);
                     border: none;
@@ -247,7 +247,7 @@ Services
                     width: 100%;
                     padding: toRem(5);
                     border: 1px solid #e1e1e1;
-                    margin-top: toRem(5);
+                    margin: toRem(5) 0 0 0;
                 }
                 .btn{
                     background-color: $primaryBgColor;

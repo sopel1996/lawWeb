@@ -25,12 +25,13 @@ a:visited{
 
 .sectionInner{
     max-width: toRem(1324);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     height:100%;
 }
 input{   
     background-clip: padding-box;
+    border: none;
+    outline: none;
 }
 ._borderNone{
     border: none !important;
@@ -40,6 +41,7 @@ input{
 }
 body{
     transition: all 0.2s;
+    font-family: "Almoni",sans-serif; 
 }
 address{
     font-style: normal;
@@ -51,7 +53,7 @@ address{
     cursor: pointer;
     background-color: $secondaryColor;
     @include AlmoniBold(20);
-    padding: toRem(10) toRem(20);
+    padding: toRem(12) toRem(20);
     position: relative;
     
     svg{
@@ -78,7 +80,7 @@ address{
     -webkit-box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%);
     -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.4);
     box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%);
-    @include AlmoniRegular(20);
+    @include AlmoniNormal(20);
 }
 .click2action ul {
     display: flex;
@@ -133,28 +135,54 @@ address{
     // display: flex;
     // align-items: center;
     // justify-content: center;
-    background-color: #fff;
+    background-color: $secondaryColor;
     width: 40px;
     height: 40px;
     font-size: 30px;
-    border-radius: 50%;
-    text-align: center;
-    color: $primaryColorText; 
+    color: #fff; 
     position: absolute;
     left: -60px;
     top: 50%;
-    transform: translate(0, 20);
-    i{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-12px, -15px);
-    }
+    transform: translate(0, toRem(-20));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 .btnPrev{
     left: auto;
     right: -60px;
-    i{
-        transform: translate(-6px,-15px);
+}
+
+.animation_phone {
+    animation: animationphone 0.3s infinite;
+}
+.animation_phone_line {
+    animation: animationlines 0.8s infinite;
+    transform-origin: bottom left;
+}
+@keyframes animationlines {
+    0% {
+        transform: scale(0);
+        opacity  : 0
+    }
+
+    40% {
+        transform: scale(1);
+        opacity  : 1
+    }
+
+    100% {
+        transform: scale(2);
+        opacity  : 0
+    }
+}
+@keyframes animationphone {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    50% {
+        transform: translate3d(20px, 0, 0)
     }
 }

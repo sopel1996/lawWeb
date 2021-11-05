@@ -14,13 +14,12 @@ Testimonials
         align-items: center;
         justify-content: space-between;
     }
-    &_title{
+    h2{
         color: #fff;
         @include AlmoniBold(42);
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
     }
     &_list{
-        width: 70% !important;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -44,8 +43,8 @@ Testimonials
                 justify-content: space-between;
                 margin: 0 0 toRem(20) 0;
             }
-            .itemText{
-                @include AlmoniRegular(20);
+            p{
+                @include AlmoniNormal(20);
                 color: $primaryColorText;
                 
             }
@@ -70,7 +69,7 @@ Testimonials
 }
 .swiper-wrapper_1{
     height: auto !important;
-    margin-bottom: 55px !important;
+    margin: 0 0 toRem(55) 0 !important;
 }
 .swiper1 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 20px !important;

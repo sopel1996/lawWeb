@@ -39,7 +39,7 @@ Mobile adaptive
     header .sectionInner{
         height: 100%;
     }
-    header ._nav{
+    header .realmenu{
         display: none;
     }
     header ._logo{
@@ -74,17 +74,20 @@ Mobile adaptive
         width: 33%;
         padding: 0 toRem(10);
     }
-    .banner ._text .title{
+    .banner ._text h2{
         @include fontSize(50);
+        text-align: center;
     }
-    .banner ._text .subTitle{
+    .banner ._text h3{
         @include fontSize(25);
+        text-align: center;
     }
-    .banner ._text .statsTitle{
+    .banner ._text h4{
         @include fontSize(20);
+        text-align: center;
     }
     .banner ._text .statsList-item .number{
-        @include fontSize(29);
+        @include fontSize(27);
     }
     .banner ._text .statsList-item .text{
         @include fontSize(16);
@@ -94,8 +97,8 @@ Mobile adaptive
     .about-services .sectionInner{
         flex-direction: column;
     }
-    .about-services .title,
-    .about-services .about-services_secondCol .title{
+    .about-services .h2,
+    .about-services .about-services_secondCol h2{
         text-align: center;
         @include fontSize(29);
         
@@ -115,7 +118,7 @@ Mobile adaptive
         border: none;
     }
     .about-services .about-services_firstCol{
-        margin-bottom: toRem(30);
+        margin: 0 0 toRem(30) 0;
     }
     .about-services .about-services_secondCol .imgList{
         justify-content: space-between;
@@ -145,13 +148,13 @@ Mobile adaptive
         margin: 0;
         width: 100%;
     }
-    .steps-online .title{
+    .steps-online h2{
         text-align: center;
         @include fontSize(29);
     }
-    .steps-online .subTitle{
+    .steps-online h3{
         width: 100%;
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
         @include fontSize(16);
     }
     .steps-online .stepsLine .firstStep, .steps-online .stepsLine .secondStep, .steps-online .stepsLine .thirdStep{
@@ -163,15 +166,15 @@ Mobile adaptive
         right: auto;
         transform: translate(0);
         justify-content: flex-start;
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
     }
     .steps-online .stepsLine .stepNumber{
-        margin-left: toRem(20);
+        margin: 0 0 0 toRem(20);
     }
     .steps-online .stepsLine .stepImg{
-        margin-left: toRem(20);
+        margin: 0 0 0 toRem(20);
     }
-    .steps-online .stepsLine .stepText{
+    .steps-online .stepsLine p{
         @include fontSize(17);
 
     }
@@ -182,7 +185,7 @@ Mobile adaptive
 
 
     //-----testimonials----
-    .testimonials_title{
+    .testimonials h2{
         @include fontSize(29);
         
     }
@@ -190,19 +193,19 @@ Mobile adaptive
     
     
     //-----why-us----   
-    .why-us .title{
+    .why-us h2{
         @include fontSize(29);
         
     }
-    .why-us .text .reasonTitle{
+    .why-us .text h3{
         @include fontSize(23);
         
     }
-    .why-us .text .reasonSubTitle{
+    .why-us .text h4{
         @include fontSize(20);
         
     }
-    .why-us .text .reasonText{
+    .why-us .text p{
         @include fontSize(17);
         
     }
@@ -216,11 +219,11 @@ Mobile adaptive
     
 
     //-----other-services----   
-    .other-services_title{
+    .other-services h2{
         @include fontSize(29);
         
     }
-    .other-services_listItem .nameService{
+    .other-services_listItem h3{
         
         @include fontSize(18);
     }
@@ -228,13 +231,13 @@ Mobile adaptive
         flex-direction: column;
     }
     .other-services_listItem{
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
     }
     // -------------
     
 
     //-----articles----    
-    .articles_title{
+    .articles h2{
         @include fontSize(29);
 
     }
@@ -248,21 +251,21 @@ Mobile adaptive
     footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
         width: 100%;
     }
-    footer .footerTitle{
+    footer h3{
         font-size: toRem(22);
-        margin-top: toRem(10);
+        margin: toRem(10) 0 0 0;
     }
-    footer ._firstLine-contacts .footerTitle{
-        margin-top: 0;
+    footer ._firstLine-contacts h3{
+        margin: 0;
     }
-    footer ._firstLine .footerList li a, footer ._firstLine-contacts .phone, footer ._firstLine-contacts .fax, footer ._firstLine-contacts .email, footer ._firstLine-contacts .workTime, footer ._firstLine-contacts .location, footer ._firstLine-contacts .contacts, footer ._firstLine-feedback .footerForm .btn{
-        margin-bottom: toRem(10);
-        @include fontSize(18);
+    footer ._firstLine .footerList li a, footer ._firstLine-contacts, footer ._firstLine-contacts li, footer ._firstLine-feedback .footerForm .btn{
+        margin: 0 0 toRem(10) 0;
+        @include fontSize(14);
     }
     footer ._secondLine .sectionInner{
         flex-direction: column;
         margin: toRem(10) 0 toRem(63) 0;
-        padding-bottom: toRem(10);
+        padding: 0 0 toRem(10) 0;
     }
     footer ._secondLine .copyright{
         order: 3;
@@ -279,10 +282,10 @@ Mobile adaptive
     
     
     //-----small banner----
-    .sectionSmallBanner_title{
+    .sectionSmallBanner h2{
         @include fontSize(45);
     }
-    .sectionSmallBanner_breadcrumbs{
+    .sectionSmallBanner h3{
         @include fontSize(14);
     }
     // -------------
@@ -301,7 +304,7 @@ Mobile adaptive
         padding: 0;
         margin: 0 0 toRem(20) 0;
     }
-    .contact-us .contact-us_form .title{
+    .contact-us .contact-us_form h2{
         @include fontSize(23);
     }
     .contact-us .contact-us_form label{
@@ -310,29 +313,18 @@ Mobile adaptive
     .contact-us .contact-us_form label input, .contact-us .contact-us_form label textarea{
         @include fontSize(13);
     }
-    .contact-us .contacts .title{
+    .contact-us .contacts h2{
         @include fontSize(18);
     }
-    .contact-us .contacts .phone, .contact-us .contacts .fax, .contact-us .contacts .email, .contact-us .contacts .workTime, .contact-us .contacts .location, .contact-us .contacts .contacts{
+    .contact-us .contacts li{
         @include fontSize(17);
     }
     .contact-us .contacts .workTime .textTitle, .contact-us .contacts .location .textTitle{
         @include fontSize(17);
     }
-    .address .text .title{
-        @include fontSize(20);
-    }
-    .address .text .subtitle{
-        @include fontSize(16);
-    }
     //------------
     
     
-    //-----services----
-   
-    //------------
-
-
     //-----location----
     .address .sectionInner{
         flex-direction: column;
@@ -347,6 +339,12 @@ Mobile adaptive
     .address iframe{
         margin: 0 0 toRem(20) 0;
         width: 100% !important;
+    }
+    .address .text h2{
+        @include fontSize(20);
+    }
+    .address .text h3{
+        @include fontSize(16);
     }
     //------------
 
@@ -375,7 +373,7 @@ Mobile adaptive
     .services .firstCol .form .formWrapper .btn{
         width: 100%;
     }
-    .services .firstCol .gridWrap .title{
+    .services .firstCol .gridWrap h2{
         text-align: center;
         @include fontSize(23);
     }
@@ -394,28 +392,34 @@ Mobile adaptive
     .services .firstCol .text{
         @include fontSize(16);
     }
-    .services .firstCol .steps-online .title{
+    .services .firstCol .steps-online h2{
         @include fontSize(29);
     }    
     .steps-online .subTitle{
         @include fontSize(16);
     }
-    .services .firstCol .form .title{
+    .services .firstCol .form h2{
         @include fontSize(23);
     }
     .services .firstCol .form .formWrapper input{
         @include fontSize(16);
     }
-    .services .firstCol .gridWrap .grid-item .itemTitle{
+    .services .firstCol .gridWrap .grid-item h3{
         @include fontSize(16);
     }
-    .services .secondCol .card .title{
+    .services .firstCol .gridWrap .grid-item{
+        margin: 0 0 toRem(20) 0;
+    }
+    .services .firstCol .gridWrap .grid-item h4{
+        @include fontSize(16);
+    }
+    .services .secondCol .card h3{
         @include fontSize(20);
     }
-    .services .secondCol .card .text{
+    .services .secondCol .card p{
         @include fontSize(16);
     }
-    .services .secondCol .subscribe .subsForm .title{
+    .services .secondCol .subscribe .subsForm h3{
         @include fontSize(20);
     }
 
@@ -423,10 +427,10 @@ Mobile adaptive
 
 
     //------article catalog------
-    .ArticlesCatalog .grid-item .itemTitle{
+    .ArticlesCatalog .grid-item h3{
         @include fontSize(20);
     }
-    .ArticlesCatalog .grid-item .itemSubtitle{
+    .ArticlesCatalog .grid-item h4{
         @include fontSize(14);
     }
     .ArticlesCatalog .grid-item .more span{

@@ -9,13 +9,12 @@ header {
         display: none;
     }
 
-    position        : absolute;
+    position        : fixed;
     top             : 0;
-    left            : 0;
+    right            : 0;
     width           : 100%;
     z-index         : 10;
     border          : none;
-    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow      : 0 1px 1px 0 rgba(255, 255, 255, 0.2);
     transition      : height 0.2s;
 
@@ -43,7 +42,7 @@ header {
 
     }
 
-    ._nav {
+    .realmenu {
         flex-grow      : 1;
         display        : flex;
         flex-direction : row;
@@ -51,14 +50,15 @@ header {
         justify-content: space-between;
         border         : none;
 
-        &Item {
+        
+        &>li {
             // display: block;
             height: toRem(80);
-            @include AlmoniRegular(20);
+            @include AlmoniNormal(20);
             color: #fff;
 
             line-height   : 80px;
-            // margin-left: 17px;
+            // margin: 0 0 0 toRem(17);
             // font-size: 20px;
             position      : relative;
 
@@ -73,8 +73,8 @@ header {
                 bottom    : -10px;
                 left      : 50%;
                 width     : 0;
-                height    : 2px;
-                background: #ffffff;
+                height    : 1px;
+                background: $secondaryColor;
                 transition: width 0.2s;
             }
 
@@ -84,8 +84,8 @@ header {
                 bottom    : -10px;
                 right     : 50%;
                 width     : 0;
-                height    : 2px;
-                background: #ffffff;
+                height    : 1px;
+                background: $secondaryColor;
                 transition: width 0.2s;
             }
 
@@ -115,15 +115,15 @@ header {
                 line-height: 25px;
                 position   : absolute;
                 right      : 0;
-                top        : 82px;
+                top        : 80px;
                 width      : 250px;
                 z-index    : 1002;
 
-                &>li {
+                &>li{
                     position: relative;
 
                     border       : none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
                     &:last-child {
                         border: none;
@@ -132,7 +132,6 @@ header {
                     &>a {
                         padding        : 10px 20px;
                         display        : block;
-                        border-top     : 1 px rgba(255, 255, 255, .1) solid;
                         text-decoration: none;
                         font-size      : 18px;
                         color          : #fff;
@@ -148,7 +147,7 @@ header {
         &>.menu-item-has-children {
             &>a {
                 position    : relative;
-                padding-left: 17px;
+                padding: 0  0 0 17px ;
             }
 
             &:after {
@@ -171,7 +170,7 @@ header {
         width      : toRem(179);
         transition : 0.2s;
         background : transparent url(../img/logo.png) 50% 50%/contain no-repeat;
-        margin-left: toRem(120);
+        margin: 0 0 0 toRem(120);
     }
 
 }
@@ -182,21 +181,14 @@ header {
         background-color: #fff;
         color           : $primaryColorText;
         box-shadow      : 0 2px 3px 0 rgb(0 0 0 / 40%);
-        height          : toRem(75);
 
-        ._nav {
-            &Item {
+        .menu {
+            &-item {
                 color: $primaryColorText;
-                height: toRem(75);
-            }
-            & > li > ul.sub-menu{
-                top: toRem(72);
             }
         }
 
         ._logo {
-            height          : toRem(55);
-            width           : toRem(167);
             background-image: url(../img/logoDark.png);
         }
 

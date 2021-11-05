@@ -18,23 +18,25 @@ About services
 
     }
 
-    .title {
+    h2 {
         @include AlmoniBold(42);
-        margin-bottom: toRem(20);
+        margin: 0 0 toRem(20) 0;
+        line-height: toRem(38);
     }
 
     .about-services_firstCol {
-        padding-left: toRem(25);
+        padding: 0 0 0 toRem(25);
         // height      : toRem(648);
         width       : 52%;
         border      : none;
 
         .text {
-            @include AlmoniRegular(24);
-            margin-bottom: toRem(30);
+            @include AlmoniNormal(22);
+            line-height: toRem(24);
+            margin: 0 0 toRem(30) 0;
 
             p {
-                margin-bottom: toRem(20);
+                margin: 0 0 toRem(20) 0;
             }
         }
 
@@ -45,7 +47,7 @@ About services
             // align-items: center;
             // justify-content: space-evenly;
             // svg {
-            //     margin-right: toRem(20);
+            //     margin: 0 toRem(20) 0 0;
             // }
         }
     }
@@ -53,12 +55,12 @@ About services
     .about-services_secondCol {
         width: 48%;
         // height       : toRem(648);
-        padding-right: toRem(45);
+        padding: 0 toRem(45) 0 0;
         border: none;
         border-right : 1px solid rgba(0, 0, 0, 0.2);
 
         .title {
-            margin-bottom: toRem(20);
+            margin: 0 0 toRem(20) 0;
         }
 
         .imgList {
@@ -76,12 +78,12 @@ About services
                 justify-content: center;
                 color: #fff;
                 padding: toRem(22) toRem(47);
-                @include AlmoniRegular(20);
+                @include AlmoniNormal(20);
                 text-align: center;
                 transition: 0.2s;
                 background   : transparent url(../img/firstCard.png) 50% 50% no-repeat;
                 background-size: 100% 100%;
-                margin-bottom: toRem(23);
+                margin: 0 0 toRem(23) 0;
                 &:hover{
                     background-size: 110% 110%;
                 }

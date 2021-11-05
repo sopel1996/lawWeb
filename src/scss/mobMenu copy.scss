@@ -6,7 +6,7 @@ Mob menu
 -----------------------------
 */
 .mobMenu {
-  @include AlmoniRegular(15);
+  @include AlmoniNormal(15);
   height            : toRem(70);
   width             : toRem(126);
   // padding        : 0 toRem(40);
@@ -97,8 +97,7 @@ Mob menu
   }
 
   .burger-menu_nav {
-    padding-top       : toRem(100);
-    padding-bottom    : toRem(40);
+    padding       : toRem(100) 0 toRem(40) 0;
     overflow          : scroll;
     position          : fixed;
     top               : 0;
@@ -126,7 +125,6 @@ Mob menu
   .burger-menu_link {
     text-decoration: none;
     text-transform : uppercase;
-    letter-spacing : 0.1em;
     color          : #ffffff;
     border-bottom  : 1px solid #fff;
     width          : toRem(200);
@@ -166,8 +164,7 @@ Mob menu
   }
 
   ul.burger-menu_nav>li {
-    padding-left : 10px;
-    padding-right: 10px;
+    padding : 0 toRem(10);
   }
 
   ul.burger-menu_nav>li>a {

@@ -3,32 +3,32 @@ $(document).ready(function () {
   
 });
 
-function burgerMenu(selector) {
-  let menu = $(selector);
-  let button = menu.find(".burger-menu_button", ".burger-menu_lines");
-  let links = menu.find(".burger-menu_link");
-  let overlay = menu.find(".burger-menu_overlay");
+// function burgerMenu(selector) {
+//   let menu = $(selector);
+//   let button = menu.find(".burger-menu_button", ".burger-menu_lines");
+//   let links = menu.find(".burger-menu_link");
+//   let overlay = menu.find(".burger-menu_overlay");
 
-  button.on("click", (e) => {
-    e.preventDefault();
-    toggleMenu();
-  });
+//   button.on("click", (e) => {
+//     e.preventDefault();
+//     toggleMenu();
+//   });
 
-  overlay.on("click", () => toggleMenu());
+//   overlay.on("click", () => toggleMenu());
 
-  function toggleMenu() {
-    menu.toggleClass("burger-menu_active");
-    button.toggleClass("burger-menu_button_active");
+//   function toggleMenu() {
+//     menu.toggleClass("burger-menu_active");
+//     button.toggleClass("burger-menu_button_active");
 
-    if (menu.hasClass("burger-menu_active")) {
-      $("body").css("overflow", "hidden");
-    } else {
-      $("body").css("overflow", "visible");
-    }
-  }
-}
+//     if (menu.hasClass("burger-menu_active")) {
+//       $("body").css("overflow", "hidden");
+//     } else {
+//       $("body").css("overflow", "visible");
+//     }
+//   }
+// }
 
-burgerMenu(".burger-menu");
+// burgerMenu(".burger-menu");
 
 jQuery(document).ready(function () {
   (function ($) {
@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
         _WIDTH = $(this).width();
         var offset = $(this).scrollTop();
         if (_WIDTH > 1000) {
-          if (offset > 100) {
+          if (offset > 80) {
             $("body").addClass("shrink");
           } else {
             $("body").removeClass("shrink");

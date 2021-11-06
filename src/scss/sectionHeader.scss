@@ -37,7 +37,6 @@ header {
         // width       : toRem(126);
         padding        : toRem(10) toRem(20);
         // height      : toRem(46);
-        margin         : 0 toRem(40) 0 0;
 
 
     }
@@ -50,7 +49,12 @@ header {
         justify-content: space-between;
         border         : none;
 
-        
+        &> li:last-child:hover > a::before {
+            width: 0%;
+        }
+        &> li:last-child:hover > a::after {
+            width: 0%;
+        }
         &>li {
             // display: block;
             height: toRem(80);
@@ -66,7 +70,7 @@ header {
             a {
                 position: relative;
             }
-
+            
             a::before {
                 content   : " ";
                 position  : absolute;
@@ -88,7 +92,7 @@ header {
                 background: $secondaryColor;
                 transition: width 0.2s;
             }
-
+            
             &:hover {
                 &>a::before {
                     width: 50%;

@@ -40,10 +40,10 @@ footer {
             @include AlmoniNormal(16);
 
             li {
+                margin: 0 0 toRem(10) 0;
                 a {
                     color          : rgb(255, 255, 255);
                     border         : none;
-                    height         : toRem(34);
                     display        : flex;
                     align-items    : center;
                     justify-content: flex-start;
@@ -245,7 +245,7 @@ footer {
                 justify-content : center;
                 width           : toRem(25);
                 height          : toRem(25);
-                margin          : 0 toRem(10);
+                margin          : 0 toRem(5);
                 border-radius   : 50%;
                 background-color: #217BEE;
 
@@ -262,8 +262,8 @@ footer {
                 width           : toRem(25);
                 height          : toRem(25);
                 border-radius   : 50%;
-                background-color: red;
-                margin          : 0 toRem(10);
+                background-color: #ff0000;
+                margin          : 0 toRem(5);
 
                 i {
                     color    : #fff;

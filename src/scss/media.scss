@@ -71,8 +71,27 @@ Mobile adaptive
         flex-direction: column;
     }
     .banner ._text .statsList-item{
-        width: 33%;
-        padding: 0 toRem(10);
+        width: 100%;
+        margin: 0 0 toRem(15) 0;
+        padding: 0 0 toRem(5) 0;
+        text-align: center;
+        border: none;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            height: toRem(1);
+            width: toRem(60);
+            background-color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            bottom: toRem(-5);
+            right: 50%;
+            transform: translate(toRem(30), 0);
+        }
+        &:first-child{
+            padding: 0 0 toRem(5) 0;
+            
+        }
     }
     .banner ._text h2{
         @include fontSize(50);
@@ -83,14 +102,17 @@ Mobile adaptive
         text-align: center;
     }
     .banner ._text h4{
-        @include fontSize(20);
+        @include fontSize(22);
         text-align: center;
+    }
+    .banner ._text .statsList{
+        flex-direction: column;
     }
     .banner ._text .statsList-item .number{
         @include fontSize(27);
     }
     .banner ._text .statsList-item .text{
-        @include fontSize(16);
+        @include fontSize(20);
     }
 
     // ----about-services---
@@ -105,11 +127,14 @@ Mobile adaptive
     }
     .about-services .about-services_firstCol .text{
         
-        @include fontSize(17);
+        @include fontSize(18);
     }
     .about-services .about-services_secondCol .imgList-Item{
         @include fontSize(14);
-
+        background-size: cover;
+    }
+    .about-services .about-services_secondCol .imgList-Item:hover {
+        background-size: cover;
     }
     .about-services .about-services_firstCol,
     .about-services .about-services_secondCol{
@@ -240,6 +265,9 @@ Mobile adaptive
     .articles h2{
         @include fontSize(29);
 
+    }
+    .articles_listItem:hover .itemImg{
+        background-size: 100% 100%;
     }
     //------------
 

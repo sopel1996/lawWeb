@@ -336,6 +336,9 @@ Mobile adaptive
     
     
     //-----small banner----
+    .sectionSmallBanner{
+        padding: toRem(80) 0 toRem(20) 0;
+    }
     .sectionSmallBanner h2{
         @include fontSize(45);
     }
@@ -346,6 +349,9 @@ Mobile adaptive
 
 
     //-----contact-us----
+    .contact-us{
+        padding: toRem(20) 0;
+    }
     .contact-us .sectionInner{
         flex-direction: column;
     }
@@ -380,6 +386,9 @@ Mobile adaptive
     
     
     //-----location----
+    .address{
+        padding: toRem(20) 0;
+    }
     .address .sectionInner{
         flex-direction: column;
     }
@@ -404,6 +413,9 @@ Mobile adaptive
 
 
     //-----services----
+    .services{
+        padding: toRem(20) 0;
+    }
     .services .sectionInner{
         flex-direction: column;
         background-color: #fff;
@@ -444,6 +456,7 @@ Mobile adaptive
         margin: 0 0 toRem(40) 0;
     }
     .services .firstCol .text{
+        padding: toRem(20) 0;
         @include fontSize(16);
     }
     .services .firstCol .steps-online h2{
@@ -452,11 +465,17 @@ Mobile adaptive
     .steps-online .subTitle{
         @include fontSize(16);
     }
+    .services .firstCol .form {
+        padding: toRem(20) toRem(17);
+    }
     .services .firstCol .form h2{
         @include fontSize(23);
     }
     .services .firstCol .form .formWrapper input{
         @include fontSize(16);
+    }
+    .services .firstCol .gridWrap{
+        padding: toRem(20) 0
     }
     .services .firstCol .gridWrap .grid-item h3{
         @include fontSize(16);
@@ -467,6 +486,12 @@ Mobile adaptive
     .services .firstCol .gridWrap .grid-item h4{
         @include fontSize(16);
     }
+    .services .secondCol{
+        padding: toRem(20) 0;
+    }
+    .services .secondCol .card{
+        margin: 0 0 toRem(20) 0;
+    }
     .services .secondCol .card h3{
         @include fontSize(20);
     }
@@ -476,11 +501,17 @@ Mobile adaptive
     .services .secondCol .subscribe .subsForm h3{
         @include fontSize(20);
     }
+    .services .secondCol .fbConteiner{
+        margin: 0 0 toRem(20) 0;
+    }
 
     //------------
 
 
     //------article catalog------
+    .ArticlesCatalog{
+        padding: toRem(20) 0
+    }
     .ArticlesCatalog .grid-item h3{
         @include fontSize(20);
     }

@@ -62,7 +62,7 @@ Mobile adaptive
 
     //-----banner-------
     .banner{
-        padding: toRem(100) 0 0 0;
+        padding: toRem(80) 0 0 0;
     }
     .banner ._cupple{
         height: toRem(440);
@@ -116,10 +116,13 @@ Mobile adaptive
     }
 
     // ----about-services---
+    .about-services {
+        padding: toRem(20) 0;
+    }
     .about-services .sectionInner{
         flex-direction: column;
     }
-    .about-services .h2,
+    .about-services h2,
     .about-services .about-services_secondCol h2{
         text-align: center;
         @include fontSize(29);
@@ -163,6 +166,9 @@ Mobile adaptive
 
 
     // ----steps-online---
+    .steps-online{
+        padding: toRem(20) 0;
+    }
     .steps-online .stepsLine{
         background: none;
         height: auto;
@@ -210,6 +216,9 @@ Mobile adaptive
 
 
     //-----testimonials----
+    .testimonials {
+        padding: toRem(20) 0;
+    }
     .testimonials h2{
         @include fontSize(29);
         
@@ -218,32 +227,40 @@ Mobile adaptive
     
     
     //-----why-us----   
+    .why-us{
+        padding: toRem(20) 0;
+    }
     .why-us h2{
         @include fontSize(29);
         
     }
-    .why-us .text h3{
+    .why-us .text .reason h3{
         @include fontSize(23);
         
     }
-    .why-us .text h4{
+    .why-us .text .reason h4{
         @include fontSize(20);
         
     }
-    .why-us .text p{
+    .why-us .text .reason p{
         @include fontSize(17);
         
     }
     .why-us .text{
         flex-direction: column;
+        margin: 0;
     }
     .why-us .text .firstCol, .why-us .text .secondCol{
         width: 100%;
+        padding: 0
     }
     //------------
     
 
     //-----other-services----   
+    .other-services{
+        padding: toRem(20) 0;
+    }
     .other-services h2{
         @include fontSize(29);
         
@@ -262,6 +279,9 @@ Mobile adaptive
     
 
     //-----articles----    
+    .articles {
+        padding: toRem(20) 0;
+    }
     .articles h2{
         @include fontSize(29);
 
@@ -275,16 +295,17 @@ Mobile adaptive
     // ----footer---
     footer ._firstLine{
         flex-direction: column;
+        padding: toRem(20) 0;
     }
     footer ._firstLine-list, footer ._firstLine-services, footer ._firstLine-contacts, footer ._firstLine-feedback{
         width: 100%;
     }
     footer h3{
         font-size: toRem(22);
-        margin: toRem(10) 0 0 0;
+        margin: toRem(10) 0 toRem(10) 0;
     }
     footer ._firstLine-contacts h3{
-        margin: 0;
+        margin: 0 0 toRem(10) 0;
     }
     footer ._firstLine .footerList li a, footer ._firstLine-contacts, footer ._firstLine-contacts li, footer ._firstLine-feedback .footerForm .btn{
         margin: 0 0 toRem(10) 0;
@@ -296,14 +317,19 @@ Mobile adaptive
         padding: 0 0 toRem(10) 0;
     }
     footer ._secondLine .copyright{
+        width: 100%;
         order: 3;
         @include fontSize(14);
+        text-align: center;
 
     }
     footer ._secondLine .socialLogo{
+        width: 100%;
         order: 2;
     }
     footer ._secondLine .realmediaLogo{
+        justify-content: center;
+        width: 100%;
         order: 1;
     }
     // -------------
